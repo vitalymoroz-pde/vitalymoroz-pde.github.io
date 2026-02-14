@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching | Vitaly Moroz</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f9;
+            --sidebar-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            padding: 50px 30px;
+            border-right: 1px solid #edf2f7;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--bg-color);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover { transform: scale(1.02); }
+
+        .contact-info {
+            text-align: left;
+            font-size: 0.85rem;
+            margin-top: 30px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 28px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s;
+        }
+
+        .social-icons img:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-2px); }
+
+        .main-content {
+            padding: 50px 60px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            margin: 25px 0 45px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 10px 0;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-color); }
+        nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
+
+        .teaching-section h2 { color: var(--primary-color); font-size: 1.6rem; margin: 30px 0 15px 0; }
+        .teaching-section h2:first-child { margin-top: 0; }
+        
+        .module-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .module-list li {
+            padding: 4px 0; /* Reduced padding for tighter spacing */
+            color: #444;
+        }
+
+        .module-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .module-list a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: #aaa;
+            grid-column: span 2;
+            background: #fafafa;
+        }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; margin: 0; border-radius: 0; box-shadow: none; }
+            .sidebar { border-right: none; border-bottom: 1px solid #eee; padding: 40px 20px; }
+            .main-content { padding: 40px 25px; }
+            nav ul { gap: 15px; justify-content: center; }
+            header h1 { font-size: 1.8rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"> 
+    <aside class="sidebar">
+        <img src="images/vm.jpg" alt="Vitaly Moroz" class="profile-img">
+        
+        <h3 style="margin: 0; font-size: 1.4rem;">
+            <a href="https://www.swansea.ac.uk/staff/v.moroz/" target="_blank" style="text-decoration: none; color: var(--primary-color);">Vitaly Moroz</a>
+        </h3>
+        
+        <p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
+
+        <div class="contact-info">
+            <strong>Address:</strong><br>
+            Department of Mathematics<br>
+            Swansea University<br>
+            Swansea SA1 8EN<br> 
+			Wales, UK<br><br>
+            
+            <strong>Email:</strong><br>
+            <a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br><br>
+            
+            <strong>Office:</strong><br>
+            <a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" target="_blank" style="color: var(--text-color); text-decoration: none;">322 Computational Foundry</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&s1=359396" target="_blank"><img src="images/msn.png" alt="MathSciNet"></a>
+			<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img src="images/arx.png" alt="arXiv"></a>
+            <a href="http://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
+            <a href="http://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="teaching.html" class="active">Teaching</a></li>
+                    <li><a href="admin.html">Administration</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="teaching-section">
+            <h2>Current Modules</h2>
+            <ul class="module-list">
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-201&ayr=20/21&psl=TB1&detailOnly=false" target="_blank">MA-201</a> Multi-variable analysis</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-202&ayr=20/21&psl=TB2&detailOnly=false" target="_blank">MA-202</a> Metric spaces and measure theory</li>
+            </ul>
+
+            <div class="info-box">
+                All teaching resources including recent assignments etc. are posted on <strong><a href="https://canvas.swansea.ac.uk/" target="_blank" style="color: var(--primary-color); text-decoration: none;">Canvas</a></strong>.
+                <br><br>
+                If you think you are not enrolled for the relevant module, please send me an e-mail.
+            </div>
+
+            <h2>Past Modules at Swansea</h2>
+            <ul class="module-list">
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=any&mod=MA-M06&ayr=23/24&psl=TB1&detailOnly=false" target="_blank">MA-M06</a> Mathematics for Data Science</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-101&ayr=12/13&psl=TB1&detailOnly=false" target="_blank">MA-101</a> Introductory Calculus</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-102&ayr=12/13&psl=TB2&detailOnly=false" target="_blank">MA-102</a> Introductory Analysis</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-201&ayr=13/14&psl=TB1&detailOnly=false" target="_blank">MA-201</a> Real Analysis and Metric Spaces</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-202&ayr=13/14&psl=TB2&detailOnly=false" target="_blank">MA-202</a> Vector Calculus and Measure Theory</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-301&ayr=17/18&psl=TB1&detailOnly=false" target="_blank">MA-301</a> Complex Variables</li>
+                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-311&ayr=17/18&psl=TB2&detailOnly=false" target="_blank">MA-311</a> Partial Differential Equations</li>
+                <li>MAA121 / MAG131 Differential Equations: <a href="./ODE/ODE-ln.pdf" target="_blank">Lecture Notes 2009/10</a></li>
+                <li>MAC221 Analysis 1</li>
+                <li>MAC223 Analysis 2</li>
+                <li>MAC321 Analysis 3</li>
+                <li>MAP255 Complex Analysis 1</li>
+                <li>MAP355 Complex Analysis 2</li>
+                <li>MAA301 Partial Differential Equations</li>
+                <li>MAP391 / MAPM91 Banach and Hilbert Spaces: <a href="./BHS/banach-ln.pdf" target="_blank">Lecture Notes 2008/09</a></li>
+            </ul>
+
+            <div class="info-box" style="background: #fafafa; border-left: 5px solid #ccc;">
+                I am a <a href="./misc/PR153884-HEA0294382.pdf" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Fellow</a> of the <a href="https://www.heacademy.ac.uk" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Higher Education Academy</a>, recognition reference PR153884.
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        &copy; 2026 Vitaly Moroz &bull; Swansea University &bull; Built with GitHub Pages
+    </footer>
+</div> 
+</body>
+</html>
