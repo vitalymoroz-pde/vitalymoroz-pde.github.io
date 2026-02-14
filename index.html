@@ -30,7 +30,6 @@
             padding: 0;
         }
 
-        /* This is the container that was missing */
         .container {
             max-width: 1050px;
             margin: 50px auto;
@@ -73,11 +72,11 @@
             margin-top: 30px;
             display: flex;
             justify-content: center;
-            gap: 12px;
+            gap: 15px; /* Increased gap for easier touch on mobile */
         }
 
         .social-icons img {
-            width: 24px;
+            width: 28px; /* Slightly larger icons */
             filter: grayscale(100%);
             opacity: 0.6;
             transition: all 0.3s;
@@ -106,7 +105,7 @@
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 25px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
@@ -114,8 +113,8 @@
             text-decoration: none;
             color: #666;
             font-weight: 600;
-            font-size: 0.9rem;
-            padding-bottom: 12px;
+            font-size: 0.95rem; /* Larger font for readability */
+            padding: 10px 0; /* Vertical padding for better touch targets */
             display: inline-block;
             transition: color 0.3s;
         }
@@ -123,7 +122,7 @@
         nav a:hover { color: var(--accent-color); }
         nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
 
-        .about-section h2 { color: var(--primary-color); font-size: 1.5rem; margin-top: 0; }
+        .about-section h2 { color: var(--primary-color); font-size: 1.6rem; margin-top: 0; }
         .about-section p { margin-bottom: 1.5rem; text-align: justify; color: #444; }
 
         .fellowship-box {
@@ -143,23 +142,46 @@
         footer {
             text-align: center;
             padding: 30px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             color: #aaa;
             grid-column: span 2;
             background: #fafafa;
         }
 
+        /* Enhanced Responsive Layout for Smartphones */
         @media (max-width: 900px) {
-            .container { grid-template-columns: 1fr; margin: 0; border-radius: 0; }
-            .sidebar { border-right: none; border-bottom: 1px solid #eee; padding: 40px 20px; }
-            .main-content { padding: 40px 25px; }
-            nav ul { gap: 15px; }
+            .container { 
+                grid-template-columns: 1fr; 
+                margin: 0; 
+                border-radius: 0; 
+                box-shadow: none; 
+            }
+            .sidebar { 
+                border-right: none; 
+                border-bottom: 1px solid #eee; 
+                padding: 40px 20px; 
+            }
+            .main-content { 
+                padding: 40px 25px; 
+            }
+            nav ul { 
+                gap: 15px;
+                justify-content: center; /* Center navigation on mobile */
+            }
+            .about-section p {
+                text-align: left; /* Better for narrow screens */
+            }
+            header h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container"> <aside class="sidebar">
+<div class="container"> 
+    <aside class="sidebar">
         <img src="images/vm.jpg" alt="Vitaly Moroz" class="profile-img">
         
         <h3 style="margin: 0; font-size: 1.4rem;">
