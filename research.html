@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly Moroz | Research</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f9;
+            --sidebar-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            padding: 50px 30px;
+            border-right: 1px solid #edf2f7;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--bg-color);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover { transform: scale(1.02); }
+
+        .contact-info {
+            text-align: left;
+            font-size: 0.85rem;
+            margin-top: 30px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 28px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s;
+        }
+
+        .social-icons img:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-2px); }
+
+        .main-content {
+            padding: 40px 50px;
+            font-size: 0.9rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            margin: 25px 0 45px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 10px 0;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-color); }
+        nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
+
+        .research-section h2 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin: 18px 0 8px 0;
+        }
+        .research-section h2:first-child { margin-top: 0; }
+
+        /* Small font and dense layout for publications */
+        .pub-list {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .pub-list li {
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .pub-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .pub-list a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: #aaa;
+            grid-column: span 2;
+            background: #fafafa;
+        }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; margin: 0; border-radius: 0; box-shadow: none; }
+            .sidebar { border-right: none; border-bottom: 1px solid #eee; padding: 40px 20px; }
+            .main-content { padding: 40px 25px; }
+            nav ul { gap: 15px; justify-content: center; }
+            header h1 { font-size: 1.8rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"> 
+    <aside class="sidebar">
+        <img src="images/vm.jpg" alt="Vitaly Moroz" class="profile-img">
+        
+        <h3 style="margin: 0; font-size: 1.4rem;">
+            <a href="https://www.swansea.ac.uk/staff/v.moroz/" target="_blank" style="text-decoration: none; color: var(--primary-color);">Vitaly Moroz</a>
+        </h3>
+        
+        <p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
+
+        <div class="contact-info">
+            <strong>Address:</strong><br>
+            Department of Mathematics<br>
+            Swansea University<br>
+            Swansea SA1 8EN<br> 
+			Wales, UK<br><br>
+            
+            <strong>Email:</strong><br>
+            <a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br><br>
+            
+            <strong>Office:</strong><br>
+            <a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" target="_blank" style="color: var(--text-color); text-decoration: none;">322 Computational Foundry</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&s1=359396" target="_blank"><img src="images/msn.png" alt="MathSciNet"></a>
+			<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img src="images/arx.png" alt="arXiv"></a>
+            <a href="https://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
+            <a href="https://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="admin.html">Administration</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <article class="research-section">
+            <h2>Recent publications</h2>
+            <ul class="pub-list">
+                <li>
+                    P. D. Lamberti, V. Moroz,
+                    <a href="https://arxiv.org/abs/2405.16705">
+                    On the Phragm&eacute;n-Lindel&ouml;f and the superposition principles for the p-Laplacian.</a>
+                    arXiv:2405.16705
+                </li>
+                <li>
+                    S. Ma, V. Moroz,
+                    <a href="https://arxiv.org/abs/2405.02877">
+                    Asymptotic profiles of ground state solutions for Choquard equations with a general local perturbation.</a>
+                    arXiv:2405.02877
+                </li>
+                <li>
+                    R. Molle, V. Moroz, G. Riey, <a href="https://arxiv.org/abs/2308.04527">Normalised solutions and limit profiles of the defocusing Gross-Pitaevskii-Poisson equation.</a>
+                    arXiv:2308.04527
+                </li>
+                <li>
+                    S. Ma, V. Moroz, <a href="https://arxiv.org/abs/2302.13727">Asymptotic profiles for Choquard equations with combined attractive nonlinearities: the locally critical case.</a>
+                    Calc. Var. Partial Differential Equations 64, 127, (2025).
+                    <a href="https://doi.org/10.1007/s00526-025-02986-8">[doi:10.1007/s00526-025-02986-8]</a>
+                </li>
+                <li>
+                    D. Greco, Y. Huang, Z. Liu, V. Moroz,
+                    <a href="https://arxiv.org/abs/2406.18472">Ground states of a nonlocal variational problem and Thomas-Fermi limit for the Choquard equation.</a>
+                    J. Lond. Math. Soc. (2025) <a href="https://doi.org/10.1112/jlms.70115">[doi:10.1112/jlms.70115]</a>
+                </li>
+                <li>
+                    S. Ma, V. Moroz, <a href="https://arxiv.org/abs/2302.13727">Asymptotic profiles for Choquard equations with combined attractive nonlinearities.</a>
+                    J. Differential Equations 412 (2024), 613-689.
+                    <a href="https://doi.org/10.1016/j.jde.2024.08.047">[doi:10.1016/j.jde.2024.08.047]</a>
+                </li>
+                <li>
+                    V. Moroz, C. Muratov, <a href="https://arxiv.org/abs/2306.02103">Thomas-Fermi theory of out-of-plane charge screening in graphene.</a>
+                    Proc. Royal Soc. Lond. Ser. A 480 (2024), no. 2294, 27pp.
+                    <a href="https://dx.doi.org/10.1098/rspa.2023.0570">[doi:10.1098/rspa.2023.0570]</a>
+                </li>
+                <li>
+                    Y. Tang, Y. Huang, Z. Liu, V. Moroz,
+                    Symmetry breaking and multiple solutions for the Schrödinger-Poisson-Slater equation.
+                    Z. Angew. Math. Phys. 75, 114 (2024).
+                    <a href="https://doi.org/10.1007/s00033-024-02261-4">[doi:10.1007/s00033-024-02261-4]</a>
+                </li>
+                <li>
+                    S. Ma, V. Moroz, <a href="https://arxiv.org/abs/2211.14895">Asymptotic profiles for a nonlinear Kirchhoff equation with combined powers nonlinearity.</a>
+                    Nonlinear Analysis 239 (2024), 113423. <a href="https://doi.org/10.1016/j.na.2023.113423">[doi:10.1016/j.na.2023.113423]</a>
+                </li>
+                <li>
+                    M. Ghergu, Z. Liu, Y. Miyamoto, V. Moroz, <a href="https://arxiv.org/abs/2106.03581">Nonlinear Inequalities with Double Riesz Potentials.</a>
+                    Potential Anal. 59 (2023), 97-112. <a href="https://doi.org/10.1007/s11118-021-09962-9">[doi:10.1007/s11118-021-09962-9]</a>
+                </li>
+                <li>
+                    S. Ma, V. Moroz, <a href="https://arxiv.org/abs/2108.01421">Asymptotic profiles for a nonlinear Schr&ouml;dinger equation with critical combined powers nonlinearity.</a>
+                    Math. Z. 304 (2023), Paper No. 13, 26 pp.
+                    <a href="https://doi.org/10.1007/s00209-023-03271-0">[doi:10.1007/s00209-023-03271-0]</a>
+                </li>
+                <li>
+                    F. Gao, V. Moroz, M. Yang, S. Zhao,
+                    <a href="https://arxiv.org/abs/2206.14958">Construction of infinitely many solutions for a critical Choquard equation via local Pohožaev identities.</a>
+                    Calc. Var. Partial Differential Equations 61, 222 (2022). <a href="https://doi.org/10.1007/s00526-022-02340-2">[doi:10.1007/s00526-022-02340-2]</a>
+                </li>
+                <li>
+                    Z. Liu, V. Moroz, <a href="https://arxiv.org/abs/2107.05065">Limit profiles for singularly perturbed Choquard equations with local repulsion.</a>
+                    Calc. Var. Partial Differential Equations 61, 160 (2022). <a href="https://doi.org/10.1007/s00526-022-02255-y">[doi:10.1007/s00526-022-02255-y]</a>
+                </li>
+                <li>
+                    Z. Liu, V. Moroz, <a href="https://arxiv.org/abs/2201.00860">Asymptotic profile of ground states for the Schrödinger-Poisson-Slater equation.</a>
+                    Nonlinear Analysis 218 (2022), 112778. <a href="https://doi.org/10.1016/j.na.2021.112778">[doi:10.1016/j.na.2021.112778]</a>
+                </li>
+                <li>
+                    M. Ghergu, Y. Miyamoto, V. Moroz, <a href="https://arxiv.org/abs/2101.12636">Polyharmonic inequalities with nonlocal terms.</a> J. Differential Equations 296 (2021), 799–821.
+                    <a href="https://doi.org/10.1016/j.jde.2021.06.019">[doi:10.1016/j.jde.2021.06.019]</a>
+                </li>
+                <li>
+                    F. Gao, H. Liu, V. Moroz, M. Yang,
+                    <a href="https://arxiv.org/abs/2009.03102">High energy positive solutions for a coupled Hartree system with Hardy-Littlewood-Sobolev critical exponents.</a>
+                    J. Differential Equations 287 (2021), 329–375.
+                    <a href="https://doi.org/10.1016/j.jde.2021.03.051">[doi:10.1016/j.jde.2021.03.051]</a>
+                </li>
+                <li>
+                    Y. Kabeya, V. Moroz,
+                    <a href="https://rdcu.be/ca6yw">Gelfand problem on a large spherical cap.</a>
+                    Journal of Elliptic and Parabolic Equations 7 (2021), 1-23.
+                    <a href="https://doi.org/10.1007/s41808-020-00091-9">[doi:10.1007/s41808-020-00091-9]</a>
+                </li>
+                <li>
+                    P. V. Gordon, V. Moroz, F. Nazarov,
+                    <a href="http://arxiv.org/abs/1905.11504">Gelfand-type problem for turbulent jets.</a>
+                    J. Differential Equations 269 (2020), 5959-5996. <a href="https://doi.org/10.1016/j.jde.2020.04.026">[doi:10.1016/j.jde.2020.04.026]</a>
+                </li>
+                <li>
+                    M. Alyobi, C. Barnett, C. Muratov, V. Moroz, R. Cobley,
+                    The voltage-dependent manipulation of few-layer graphene with a scanning tunneling microscopy tip
+                    Carbon 163 (2020), 379-384.
+                    <a href="https://doi.org/10.1016/j.carbon.2020.03.046">[doi:10.1016/10.1016/j.carbon.2020.03.046]</a>
+                </li>
+                <li>
+                    W. Albalawi, C. Mercuri, V. Moroz,
+                    
+                    <a href="https://rdcu.be/bCYYQ">
+                    Groundstate asymptotics for a class of singularly perturbed p-Laplacian problems in <var>R<sup>N</sup></var>.</a>
+                    Annali di Matematica Pura ed Applicata 199 (2020), 23-63.
+                    <a href="https://doi.org/10.1007/s10231-019-00865-6">[doi:10.1007/s10231-019-00865-6]</a>
+                </li>
+                <li>
+                    J. Bellazzini, M. Ghimenti, C. Mercuri, V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1612.00243">
+                    Sharp Gagliardo-Nirenberg inequalities in fractional Coulomb-Sobolev spaces.</a>
+                    Trans. Amer. Math. Soc. 370 (2018), 8285-8310.
+                    <a href="https://doi.org/10.1090/tran/7426">[doi:10.1090/tran/7426]</a>
+                </li>
+                <li>
+                    M. Marcus, V. Moroz,
+                    <a href="http://arxiv.org/abs/1603.09265">
+                    Moderate solutions of semilinear elliptic equations with Hardy potential under minimal restrictions on the potential.</a>
+                    Ann. Sc. Norm. Super. Pisa Cl. Sci. (5) 18 (2018), 39-64.
+                    <a href="https://dx.doi.org/10.2422/2036-2145.201604_002">[doi:10.2422/2036-2145.201604_002]</a>
+                </li>
+                <li>
+                    C. Bandle, M. Marcus, V. Moroz,
+                    <a href="http://arxiv.org/abs/1604.08830">
+                    Boundary singularities of solutions of semilinear elliptic equations in the half-space with a Hardy potential.</a>
+                    Israel J. Math. 222 (2017), 487-514.
+                    <a href="https://doi.org/10.1007/s11856-017-1598-4">[doi:10.1007/s11856-017-1598-4]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1606.02158">
+                    A guide to the Choquard equation.</a>
+                    J. Fixed Point Theory Appl. 19 (2017), 773-813.
+                    <a href="https://dx.doi.org/10.1007/s11784-016-0373-1">[doi:10.1007/s11784-016-0373-1]</a>
+                </li>
+                <li>
+                    M. Ghimenti, V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1511.04779">
+                    Least action nodal solutions for the quadratic Choquard equation.</a>
+                    Proc. Amer. Math. Soc. 145 (2017), 737-747.
+                    <a href="https://dx.doi.org/10.1090/proc/13247">[doi:10.1090/proc/13247]</a>
+                </li>
+                <li>
+                    C. Mercuri, V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1507.02837">
+                    Groundstates and radial solutions to nonlinear Schr&ouml;dinger-Poisson-Slater equations at the critical frequency.</a>
+                    Calc. Var. Partial Differential Equations 55 (2016), Paper No. 146, 58 pp.
+                    <a href="https://dx.doi.org/10.1007/s00526-016-1079-3">[doi:10.1007/s00526-016-1079-3]</a>
+                </li>
+                <li>
+                    J. Lu, V. Moroz, C. Muratov,
+                    <a href="http://arxiv.org/abs/1405.4949">
+                    Orbital-free density functional theory of out-of-plane charge screening in graphene.</a>
+                    J. Nonlinear Sci. 25 (2015), 1391-1430.
+                    <a href="https://dx.doi.org/10.1007/s00332-015-9259-4">[doi:10.1007/s00332-015-9259-4]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1403.7414">
+                    Groundstates of nonlinear Choquard equations: Hardy-Littlewood-Sobolev critical exponent.</a>
+                    Commun. Contemp. Math. 17, 1550005 (2015).
+                    <a href="https://dx.doi.org/10.1142/S0219199715500054">[doi:10.1142/S0219199715500054]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1212.2027">
+                    Existence of groundstates for a class of nonlinear Choquard equations.</a>
+                    Trans. Amer. Math. Soc. 367 (2015), 6557-6579.
+                    <a href="https://dx.doi.org/10.1090/S0002-9947-2014-06289-2">[doi:10.1090/S0002-9947-2014-06289-2]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1308.1571">
+                    Semi-classical states for the Choquard equation.</a>
+                    Calc. Var. Partial Differential Equations 52 (2015), 199-235.
+                    <a href="https://dx.doi.org/10.1007/s00526-014-0709-x">[doi:10.1007/s00526-014-0709-x]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1108.4668">
+                    Existence, stability and oscillation properties of slow decay positive solutions of supercritical elliptic equations with Hardy potential.</a>
+                    Proc. Edinb. Math. Soc. 58 (2015), 255-271.
+                    <a href=" http://dx.doi.org/10.1017/S0013091513000588">[doi:10.1017/S0013091513000588]</a>
+                </li>
+                <li>
+                    V. Moroz, C. Muratov,
+                    <a href="http://arxiv.org/abs/1202.3426">
+                    Asymptotic properties of ground states of scalar field equations with a vanishing parameter.</a>
+                    J. Eur. Math. Soc. 16 (2014), 1081-1109.
+                    <a href="https://dx.doi.org/10.4171/jems/455">[doi:10.4171/jems/455]</a>
+                </li>
+                <li>
+                    P. Gordon, V. Moroz,
+                    <a href="http://arxiv.org/abs/1308.5577">
+                    Gelfand type problem for two phase porous media.
+                    </a>
+                    Proc. Royal Soc. Lond. Ser. A. 470 (2014), no. 2163, 17pp.
+                    <a href="https://dx.doi.org/10.1098/rspa.2013.0573">[doi:10.1098/rspa.2013.0573]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1205.6286">
+                    Groundstates of nonlinear Choquard equations: existence, qualitative properties and decay asymptotics.</a>
+                    J. Funct. Anal. 265 (2013), 153-184.
+                    <a href="https://dx.doi.org/10.1016/j.jfa.2013.04.007">[doi:10.1016/j.jfa.2013.04.007]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/1203.3154">
+                    Nonexistence and optimal decay of supersolutions to Choquard equations in exterior domains.</a>
+                    J. Differential Equations, 254 (2013), 3089-3145.
+                    <a href="https://dx.doi.org/10.1016/j.jde.2012.12.019">[doi:10.1016/j.jde.2012.12.019]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    
+                    <a href="http://fmi.unibuc.ro/ro/anale/matematica/2_2012/moroz_van_schaftingen.pdf">
+                    Nonlocal Hardy type inequalities with optimal constants and remainder terms.</a>
+                    Ann. Univ. Buchar. Math. Ser. 3 (LXI) (2012), 187-200.
+                </li>
+                <li>
+                    C. Bandle, V. Moroz, W. Reichel,
+                    <a href="http://arxiv.org/abs/0904.2072">
+                    Large solutions to semilinear elliptic equations with Hardy potential and exponential nonlinearity.</a>
+                    <em>
+                    Around the Research of Vladimir Maz'ya II,
+                    Partial Differential Equations,</em>
+                    1-22, Int. Math. Ser. (N. Y.), 12, <em>Springer, New York</em>, 2010.
+                    <a href="https://dx.doi.org/10.1007/978-1-4419-1343-2_1">[doi:10.1007/978-1-4419-1343-2_1]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    <a href="http://arxiv.org/abs/0902.0722">
+                    Semiclassical stationary states for nonlinear Schr&ouml;dinger equations with fast decaying potentials.</a>
+                    Calc. Var. Partial Differential Equations, 37 (2010), 1-27.
+                    <a href="https://dx.doi.org/10.1007/s00526-009-0249-y">[doi:10.1007/s00526-009-0249-y]</a>
+                </li>
+                <li>
+                    V. Moroz, J. Van Schaftingen,
+                    Existence and concentration for nonlinear Schr&ouml;dinger equations with fast decaying potentials,
+                    C. R. Math. Acad. Sci. Paris, Ser. I 347 (2009), 921-926.
+                    <a href="https://dx.doi.org/doi:10.1016/j.crma.2009.05.009">[doi:10.1016/j.crma.2009.05.009]</a>
+                </li>
+                <li>
+                    V. Moroz,
+                    <a href="preprints/sublinear.pdf">
+                    Positive solutions to sublinear second-order divergence type elliptic equations in cone-like domains.</a>
+                    J. Math. Anal. Appl. 352 (2009), 418-426.
+                    <a href="https://dx.doi.org/10.1016/j.jmaa.2008.05.062">[doi:10.1016/j.jmaa.2008.05.062]</a>
+                </li>
+                <li>
+                    C. Bandle, V. Moroz, W. Reichel,
+                    <a href="http://arxiv.org/abs/0708.1155">
+                    'Boundary blowup' type sub-solutions to semilinear elliptic equations with Hardy potential.</a>
+                    J. London Math. Soc. (2) 77 (2008), 503-523.
+                    <a href="https://dx.doi.org/10.1112/jlms/jdm104">[doi:10.1112/jlms/jdm104]</a>
+                </li>
+                <li>
+                    V. Liskevich, S. Lyakhova, V. Moroz,
+                    <a href="preprints/llm-p.pdf">
+                    Positive solutions to nonlinear p-Laplace equations with Hardy potential in exterior domains.</a>
+                    J. Differential Equations 232 (2007), 212-252.
+                    <a href="https://dx.doi.org/10.1016/j.jde.2006.09.001">[doi:10.1016/j.jde.2006.09.001]</a>
+                </li>
+                <li>
+                    V. Liskevich, S. Lyakhova, V. Moroz,
+                    <a href="preprints/llm.pdf">
+                    Positive solutions to singular semilinear elliptic equations with critical potential on cone-like domains.</a>
+                    Adv. Differential Equations 11 (2006), 361-398.
+                    <a href="http://projecteuclid.org/euclid.ade/1355867701">[projecteuclid.org/euclid.ade/1355867701]</a>
+                </li>
+                <li>
+                    V. Liskevich, S. Lyakhova, V. Moroz,
+                    <a href="preprints/equadiff.pdf">
+                    Positive solutions to semilinear elliptic equations with critical lower order terms.</a>
+                    EQUADIFF 2003. Proceedings of the International Conference on Differential Equations.
+                    World Scientific, 2005. pp.549-557.
+                    <a href="https://dx.doi.org/10.1142/9789812702067_0091">[doi:10.1142/9789812702067_0091]</a>
+                </li>
+                <li>
+                    V. Kondratiev, V. Liskevich, V. Moroz, Z. Sobol,
+                    <a href="preprints/klms.pdf">
+                    A critical phenomenon for sublinear elliptic equations in cone-like domains.</a>
+                    Bull. Lond. Maths. Soc. 37 (2005), 585-591.
+                    <a href="https://dx.doi.org/10.1112/S0024609305004492 ">[doi:10.1112/S0024609305004492]</a>
+                </li>
+                <li>
+                    V. Kondratiev, V. Liskevich, V. Moroz,
+                    <a href="preprints/klm.pdf">
+                    Positive solutions to superlinear second-order divergence type elliptic equations in cone-like domains.</a>
+                    Ann. Inst. H. Poincar&eacute; Anal. Non Lin&eacute;aire 22 (2005), 25-43.
+                    <a href="https://dx.doi.org/10.1016/j.anihpc.2004.03.003">[doi:10.1016/j.anihpc.2004.03.003]</a>
+                </li>
+                <li>
+                    V. Moroz,
+                    <a href="preprints/indef.pdf">
+                    On the Morse critical groups for indefinite sublinear elliptic problems.</a>
+                    Nonlinear Analysis 52 (2003), 1441-1453.
+                    <a href="https://dx.doi.org/10.1016/S0362-546X(02)00174-8">[doi:10.1016/S0362-546X(02)00174-8]</a>
+                </li>
+                <li>
+                    F. Faraci, V. Moroz,
+                    <a href="preprints/faraci.pdf">
+                    Solutions of Hammerstein integral equations via a variational principle.</a>
+                    J. Integral Equations Appl. 15 (2003), 385-402.
+                    <a href="https://dx.doi.org/10.1216/jiea/1181074983">[doi:10.1216/jiea/1181074983]</a>
+                </li>
+                <li>
+                    N. Jacob,
+                    V. Moroz, <a href="preprints/markov.pdf">
+                    On the Log-Laplace equation for nonlocal operators generating sub-Markovian semigroups.</a>
+                    Appl. Math. Optimization 45 (2002), 237-250.
+                    <a href="https://dx.doi.org/10.1007/s00245-001-0037-3">[doi:10.1007/s00245-001-0037-3]</a>
+                    
+                    <!--
+                </li>
+                <li>
+                    V. Moroz,
+                    <a href="preprints/euler.pdf">
+                    On Euler equations in higher order Sobolev spaces.</a>
+                    Potential Analysis 14 (2001), 93-106.
+                    <a href="http://dx.doi.org/10.1023/A:1026565515022">[doi:10.1023/A:1026565515022]</a>;
+                    <a href="http://dx.doi.org/10.1023/A:1017487118438">[doi:10.1023/A:1017487118438]</a>
+                    -->
+                </li>
+                <li>
+                    N. Jacob, V. Moroz,
+                    <a href="preprints/nonlocal.pdf">
+                    On the semilinear Dirichlet Problem for a class of nonlocal operators generating Dirichlet forms.</a>
+                    Recent Trends in Nonlinear Analysis, 191-204,
+                    Progr. Nonlinear Differential Equations Appl., 40 , Birkhauser, Basel, 2000.
+                    <a href="https://dx.doi.org/10.1007/978-3-0348-8411-2_18">[doi:10.1007/978-3-0348-8411-2_18]</a>
+                </li>
+                <li>
+                    V. B. Moroz, P. P. Zabreiko,
+                    <a href="http://www.emis.de/journals/ZAA/1803/morozpri.pdf">
+                    
+                    On the Hammerstein equations with natural growth conditions.</a>
+                    Z. Anal. Anwendungen 18 (1999), 625-638.
+                    <a href="https://dx.doi.org/10.4171/ZAA/902">[doi:10.4171/ZAA/902]</a>
+                </li>
+                <li>
+                    V. Moroz, A. Vignoli, P. Zabreiko
+                    <a href="http://www.tmna.ncu.pl/static/files/v11n1-06.pdf">
+                    
+                    On the Three Critical Points Theorem.</a>
+                    Topol. Methods Nonlinear Anal. 11 (1998), 103-113.
+                    <a href="https://projecteuclid.org/euclid.tmna/1476842402">[projecteuclid.org/euclid.tmna/1476842402]</a>
+                </li>
+                <li>
+                    V. Moroz, <a href="http://www.tmna.ncu.pl/static/files/v10n2-11.pdf">
+                    
+                    Solutions of superlinear at zero elliptic equations via Morse theory.</a>
+                    Topol. Methods Nonlinear Anal. 10 (1997), 387-397.
+                    <a href="https://projecteuclid.org/euclid.tmna/1476842213">[projecteuclid.org/euclid.tmna/1476842213]</a>
+                </li>
+                <li>
+                    V. B. Moroz, P. P. Zabreiko,
+                    A Variant of the Mountain Pass Theorem and its Application to Hammerstein Integral Equations.
+                    Z. Anal. Anwendungen 15 (1996), 985-997.
+                    <a href="https://dx.doi.org/10.4171/ZAA/741">[doi:10.4171/ZAA/741]</a>
+                </li>
+            </ul>
+
+            <h2>Lecture Notes</h2>
+            <ul class="pub-list">
+                <li>
+                    <a href="https://dx.doi.org/10.13140/RG.2.2.10445.05601">Positivity principles and decay of solutions in semilinear elliptic problems.</a>
+                    Lectures given at <a href="http://minicourses.dmsa.unipd.it/">Online Mini-courses in Mathematical Analysis 2020</a>, University of Padova, 14-17 September 2020.
+                </li>
+            </ul>
+        </article>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Vitaly Moroz &bull; Swansea University &bull; Built with GitHub Pages
+    </footer>
+</div> 
+</body>
+</html>

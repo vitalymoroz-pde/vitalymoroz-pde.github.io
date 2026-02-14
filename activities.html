@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly Moroz | Activities</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f9;
+            --sidebar-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            padding: 50px 30px;
+            border-right: 1px solid #edf2f7;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--bg-color);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover { transform: scale(1.02); }
+
+        .contact-info {
+            text-align: left;
+            font-size: 0.85rem;
+            margin-top: 30px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 28px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s;
+        }
+
+        .social-icons img:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-2px); }
+
+        .main-content {
+            padding: 40px 50px;
+			font-size: 0.9rem;
+        }
+		
+		.section-block h2 {
+			font-size: 1.1rem;
+			margin-bottom: 6px;
+		}
+
+		.section-block ul {
+		margin-top: 6px;
+		padding-left: 1rem;
+		}
+
+		.section-block li {
+			margin: 0.2rem 0;     /* denser list spacing */
+			line-height: 1.4;     /* tighter lines */
+		}
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            margin: 25px 0 45px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 10px 0;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-color); }
+        nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
+
+        .about-section h2 { color: var(--primary-color); font-size: 1.6rem; margin-top: 0; }
+        .about-section p { margin-bottom: 1.5rem; text-align: justify; color: #444; }
+
+        /* Page-specific spacing for long lists */
+        .section-block { margin-bottom: 18px; }
+        .section-block h2 { margin-bottom: 10px; }
+        .section-block ul { margin-top: 10px; padding-left: 1.2rem; }
+        .section-block li { margin: 0.4rem 0; }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: #aaa;
+            grid-column: span 2;
+            background: #fafafa;
+        }
+
+        /* Enhanced Responsive Layout for Smartphones */
+        @media (max-width: 900px) {
+            .container { 
+                grid-template-columns: 1fr; 
+                margin: 0; 
+                border-radius: 0; 
+                box-shadow: none; 
+            }
+            .sidebar { 
+                border-right: none; 
+                border-bottom: 1px solid #eee; 
+                padding: 40px 20px; 
+            }
+            .main-content { 
+                padding: 40px 25px; 
+            }
+            nav ul { 
+                gap: 15px;
+                justify-content: center;
+            }
+            .about-section p {
+                text-align: left;
+            }
+            header h1 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"> 
+    <aside class="sidebar">
+        <img src="images/vm.jpg" alt="Vitaly Moroz" class="profile-img">
+        
+        <h3 style="margin: 0; font-size: 1.4rem;">
+            <a href="https://www.swansea.ac.uk/staff/v.moroz/" target="_blank" style="text-decoration: none; color: var(--primary-color);">Vitaly Moroz</a>
+        </h3>
+        
+        <p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
+
+        <div class="contact-info">
+            <strong>Address:</strong><br>
+            Department of Mathematics<br>
+            Swansea University<br>
+            Swansea SA1 8EN<br> 
+            Wales, UK<br><br>
+            
+            <strong>Email:</strong><br>
+            <a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br><br>
+
+            <strong>Phone:</strong><br>
+            +44 (0)1792 602763<br><br>
+            
+            <strong>Office:</strong><br>
+            <a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" target="_blank" style="color: var(--text-color); text-decoration: none;">322 Computational Foundry</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&s1=359396" target="_blank"><img src="images/msn.png" alt="MathSciNet"></a>
+            <a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img src="images/arx.png" alt="arXiv"></a>
+            <a href="https://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
+            <a href="https://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="activities.html" class="active">Activities</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="admin.html">Administration</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="about-section">
+            
+            <div class="section-block">
+                <h2>Editorial</h2>
+                <ul>
+                    <li>Editorial Board member of the <em><a href="https://www.lms.ac.uk/publications/journals">Bulletin and Journal of the London Mathematical Society</a></em> (2026– )</li>
+                    <li>Editorial Board member of the <em><a href="https://royalsocietypublishing.org/journal/rsta">Philosophical Transactions of the Royal Society A</a></em> (2022– )</li>
+                    <li>Editorial Board member of the <em><a href="http://www.cambridge.org/core/journals/proceedings-of-the-royal-society-of-edinburgh-section-a-mathematics">Proceedings of the Royal Society of Edinburgh: Section A Mathematics</a></em> (2013–2025)</li>
+                    <li>Subject editor in Analysis for <em><a href="http://journals.cambridge.org/action/displayJournal?jid=GMJ">Glasgow Mathematical Journal</a></em> (2010–2021)</li>
+                    <li>Editorial Board member of <em><a href="http://www.tandf.co.uk/journals/journal.asp?issn=1747-6933&linktype=1">Complex Variables and Elliptic Equations</a></em> (2011–2021)</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2>Advisory</h2>
+                <ul>
+                    <li>London Mathematical Society (LMS) <a href="https://www.lms.ac.uk/about/committees/research-policy-committee">Research Policy Committee</a>: 2023–2024</li>
+                    <li>Heads of Departments of Mathematical Sciences (HoDoMS) <a href="https://www.hodoms.org.uk/contact/">Committee</a>: 2022–2024</li>
+                    <li>Evaluation Panel for the <a href="https://gacr.cz/en/">Czech Science Foundation</a>: 2018–23</li>
+                    <li>College of Expert Reviewers for the <a href="http://www.esf.org">European Science Foundation (ESF)</a>: 2014–</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2>Meetings organisation</h2>
+                <ul>
+                    <li><a href="https://icms.ac.uk/activities/workshop/uk-japan-workshop-on-nonlinear-pdes-singularities-and-asymptotic-patterns-in-fluids-chemotaxis-and-geometric-pdes/">UK-Japan Workshop on Nonlinear PDEs: Singularities and asymptotic patterns in Fluids, Chemotaxis and Geometric PDEs</a> (ICMS, Bayes Centre, Edinburgh, 30 June – 4 July 2025)</li>
+                    <li><a href="SSS-PDE-2024/">Swansea Summer School in Nonlinear PDEs</a> (Swansea, 1–5 July 2024)</li>
+                    <li><a href="LMS-Symmetries-PDE-2019/">Workshop on Symmetries and Asymptotic patterns in Nonlinear Partial Differential Equations</a> (Swansea, 10–12 June 2019)</li>
+                    <li><a href="http://www.aimsciences.org/conferences/2018/index.html">12th AIMS Conference on Dynamical Systems, Differential Equations and Applications</a>, July 5 – July 9, 2018, Taipei, Taiwan: <a href="http://aimsciences.org/AIMS-Conference/conf-reg2018/ss/Schedule.php?ssid=62">special session organiser</a></li>
+                    <li><a href="LMS-UK-Japan-PDE-2018/">UK-Japan Workshop on Analysis of Nonlinear Partial Differential Equations</a> (Swansea, 16–18 May 2018)</li>
+                    <li><a href="LMS-WIMCS-Bath-2015/">LMS WIMCS - Bath Analysis Day</a> (Swansea, 20 March 2015)</li>
+                    <li><a href="WIMCS-LMS-2014/">LMS WIMCS Analysis Day</a> (Swansea, 25 September 2014)</li>
+                    <li><a href="WIMCS-LMS-2012/">LMS WIMCS Workshop on Calculus of Variations and Nonlinear PDEs</a> (Swansea, 25 May 2012)</li>
+                    <li><a href="WIMCS/">LMS WIMCS Workshop on Calculus of Variations and Nonlinear PDEs</a> (Swansea, 20 May 2011)</li>
+                    <li><a href="SWWS/">Second South West Regional PDE Winter School</a> (Swansea, 15–16 January 2010)</li>
+                    <li><a href="LMS-regional/">LMS South West and South Wales Regional Meeting 2008 and subsequent Workshop on Calculus of Variations and Nonlinear PDEs</a> (Swansea, 15–17 September 2008)</li>
+                    <li><a href="LMS/">Summer School on Nonlinear Parabolic Equations and Applications</a> (Swansea, 7–11 July 2008)</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2>Visiting positions</h2>
+                <ul>
+                    <li>Visiting Professor at Zhejiang Normal University, Jinhua, China, October 2025</li>
+                    <li><a href="https://www.mat.uniroma2.it/dottorato/Docs/Roma-2024%20-%20programme.pdf">Visiting Professor at University of Rome II Tor Vergata</a>, Italy, May – June 2024</li>
+                    <li><a href="https://www.jsps.go.jp/english/">JSPS Research Fellow</a> at Osaka Metropolitan University, Japan, December 2022 – January 2023</li>
+                    <li>Guest Professor at Osaka Prefecture University, Japan, December 2016 – January 2017</li>
+                    <li>Coleman-Cohen Trust Visiting Professor fellowship, Technion, Haifa, Israel, January – February 2015</li>
+                    <li>Visiting professor fellowship, Catholic University of Louvaine, Louvaine-la-Neuve, Belgium, May 2012</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2>Recent research invitations</h2>
+                <ul>
+                    <li>Seminar Talk, Waseda University, Tokyo, Japan, January 2026</li>
+                    <li>Seminar Talk, OIST, Okinawa, Japan, January 2026</li>
+                    <li>Seminar Talk, Osaka Metropolitan University, Japan, January 2026</li>
+                    <li>Seminar Talk, Nankai University, Tianjin, China, December 2025</li>
+                    <li>Seminar Talk, Suzhou University of Science and Technology, Suzhou, China, December 2025</li>
+                    <li>Seminar Talk, Jiangsu University, Zhenjiang, China, December 2025</li>
+                    <li>Seminar talk at OxPDE, University of Oxford, October 2024</li>
+                    <li>BIRS Workshop <a href="http://www.birs.ca/events/2024/5-day-workshops/24w5503">"Nonlocal Problems in Mathematical Physics, Analysis and Geometry"</a>, 15–19 September 2024, IASM, Hangzhou, China: invited talk (online)</li>
+                    <li>Workshop <a href="https://www.matfis.unicampania.it/glimpse-pdes">"A Glimpse into PDEs"</a>, 12–14 June 2024, University of Campania, Caserta, Italy: invited talk</li>
+                    <li>Workshop <a href="https://smfi.unipr.it/en/parma2024">"Modeling and Analysis in Nanomagnetism and beyond"</a>, 27–31 May 2024, University of Parma, Italy: invited talk</li>
+                    <li><a href="https://www.math.kit.edu/iana2/~ewald/seite/wsmrz2024bandle/">PDEs, Calculus of Variations and Applications</a>, Workshop in honor of Catherine Bandle, KIT Karlsruhe, 13–14 March 2024: invited talk</li>
+                    <li>Seminar talk, Shanghai Jiao Tong University, China, January 2024</li>
+                    <li>Research visit and seminar talk, Zhejiang Normal University, Jinhua, China, December 2023</li>
+                    <li><a href="https://iciam2023.org/registered_data?id=00356">ICIAM 2023 - 10th International Congress on Industrial and Applied Mathematics</a>, August 20–25, 2023, Waseda University, Tokyo, Japan: invited minisimposium talk (online)</li>
+                    <li>Workshop <a href="https://people.bath.ac.uk/rm257/nonlinear-pde-calculus-of-variations/">"Contemporary advances in nonlinear PDE and the Calculus of Variations"</a>, 10–11 July 2023, University of Reading: invited talk</li>
+                    <li>Workshop <a href="https://people.bath.ac.uk/rm257/variational-methods/">"Variational methods for nonlinear PDEs"</a>, 4–7 July 2023, Cardiff University: invited talk</li>
+                    <li>Seminar talk, Waseda University, Tokyo, Japan, January 2023</li>
+                    <li>Seminar talk, Tokyo Metropolitan University, Tokyo, Japan, January 2023</li>
+                    <li>Seminar talk, Shanghai Jiao Tong University, Zoom, January 2023</li>
+                    <li>South Osaka Analysis seminar talk, Osaka Metropolitan University, Tokyo, Japan, December 2022</li>
+                    <li>Workshop <a href="http://people.maths.ox.ac.uk/carrillo/Capri/anacapri4.html">"Frontiers in Nonlocal Nonlinear PDEs"</a>, Anacapri, Italy, 5–8 July 2022: invited talk</li>
+                    <li>Nonlinear PDE seminar, Zhejiang Normal University, China, May 2022: invited Zoom talk</li>
+                    <li>Lecture course on <a href="https://math.swansea.ac.uk/staff/vm/TCC/">"Criticality theory for Schr&ouml;dinger operators"</a> given at <a href="https://www.maths.ox.ac.uk/groups/tcc">The Taught Course Centre (TCC)</a>, January–March 2022</li>
+                    <li>Nonlinear PDE seminar, KIT - Karlsruhe Institute of Technology, November 2021: invited Zoom talk</li>
+                    <li>Exact Results in Quantum Theory &amp; Gravity Seminar, University of Warsaw, April 2021: invited Zoom talk</li>
+                    <li>University of Rome II "Tor Vergata", December 2020: invited Zoom talk</li>
+                    <li>V.I. Smirnov Seminar on Mathematical Physics, St. Petersburg Department of V.A. Steklov Institute of Mathematics, November 2020: invited Zoom talk</li>
+                    <li>Minicourse <a href="https://dx.doi.org/10.13140/RG.2.2.10445.05601">"Positivity principles and decay of solutions in semilinear elliptic problems"</a> given at <a href="http://minicourses.dmsa.unipd.it/">Online Mini-courses in Mathematical Analysis 2020</a>, University of Padova, 14–17 September 2020</li>
+                    <li><a href="https://conference.math.muni.cz/veron70/">Singular problem associated to quasilinear equation</a> - Workshop in celebration of Marie-Fran&ccedil;oise Bidaut-V&eacute;ron and Laurent V&eacute;ron's 70th birthday, Zoom, 1–3 June 2020: <a href="https://conference.math.muni.cz/veron70/data/uploads/slides/moroz-slides.pdf">invited talk</a></li>
+                    <li>"Nonlinear days in Alghero", Italy, 16–20 September 2019: invited talk</li>
+                    <li>Research visit, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea, July 2019</li>
+                    <li>Seminar talk, Tsinghua University, Beijing, China, June 2019</li>
+                    <li>Seminar talk, Soochow University, Suzhou, China, June 2019</li>
+                    <li>Research visit and workshop talk, Suzhou University of Science and Technology, China, June 2019</li>
+                    <li>Research visit and seminar talk, University of Padova, Italy, February 2019</li>
+                    <li>Research visit and seminar talk, Korea Advanced Institute of Science &amp; Technology (KAIST), Daejeon, South Korea, January 2019</li>
+                    <li>Research visit and seminar talk, Osaka Prefecture University, Japan, December 2018</li>
+                    <li>Research visit and seminar talk, University of Sassari, Italy, September 2018</li>
+                    <li>London Analysis Seminar talk, May 2018</li>
+                    <li>Research visit and seminar talk, Kent State University, Ohio, USA, April 2018</li>
+                    <li>Research visit and seminar talk, Texas A&amp;M University, USA, April 2018</li>
+                    <li><a href="http://mcqm18.cond-math.it/">Mathematical Challenges in Quantum Mechanics</a>, Rome, 19–24 February 2018: session talk</li>
+                    <li><a href="https://cms-math.net.technion.ac.il/batsheva-de-rothschild-seminar-on-the-hardy-type-inequalities-and-elliptic-pdes/">The Batsheva de Rothschild Seminar on Hardy-type Inequalities and Elliptic PDEs</a>, Midreshet Sde Boker, Israel, 7–11 January 2018: invited talk</li>
+                    <li>Erasmus+ visit to Texas A&amp;M University, USA, April 2017</li>
+                    <li>Workshop on "Schr&ouml;dinger equations: Asymptotics, Integrability and Beyond", Bristol, 28 March 2017: invited talk</li>
+                    <li>Analysis Seminar talk, University of Padova, Italy, Novemeber 2016</li>
+                    <li>Research visit and seminar talk, Catholic University of Louvaine, Louvaine-la-Neuve, Belgium, March 2016</li>
+                </ul>
+
+                
+            </div>
+
+            <div class="section-block">
+                <h2>Research grants</h2>
+                <ul>
+                    <li><a href="https://www.leverhulme.ac.uk/listings?field_grant_scheme_target_id=13" target="_blank">Leverhulme Trust</a> Research Fellowship, 2025–26.</li>
+                    <li>The Royal Society International Exchanges Cost Share - NSFC, China, 2020–26.</li>
+                    <li>LMS Scheme 1 Conference Grant, 2019.</li>
+                    <li>Leverhulme Trust Visiting Professorship - Professor Friedemann Brock, 2018–19.</li>
+                    <li>LMS Scheme 1 Conference Grant, 2018.</li>
+                    <li>The Royal Society International Joint project UK - Switzerland, 2004–07.</li>
+                    <li>The Nuffield Foundation award to newly appointed lecturers; 2002–04.</li>
+                </ul>
+                <p>Smaller LMS, Royal Society, British Council and internal short visits and conference grants are not listed.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        &copy; 2026 Vitaly Moroz &bull; Swansea University &bull; Built with GitHub Pages
+    </footer>
+</div>
+
+</body>
+</html>
