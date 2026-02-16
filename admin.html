@@ -1,18 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administration | Vitaly Moroz</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Administration | Vitaly Moroz</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
         :root {
             --primary-color: #2c3e50;
             --accent-color: #3498db;
@@ -85,7 +83,9 @@
         .social-icons img:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-2px); }
 
         .main-content {
-            padding: 50px 60px;
+            padding: 40px 50px;
+        
+            font-size: 0.9rem;
         }
 
         header h1 {
@@ -122,7 +122,8 @@
         nav a:hover { color: var(--accent-color); }
         nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
 
-        .admin-section h2 { color: var(--primary-color); font-size: 1.6rem; margin-top: 0; }
+        .admin-section h2 { color: var(--primary-color); font-size: 1.2rem; margin: 18px 0 8px 0; }
+        .admin-section h2:first-child { margin-top: 0; }
         
         .admin-list {
             list-style: none;
@@ -136,7 +137,17 @@
             color: #444;
         }
 
-        footer {
+        
+        .admin-section a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .admin-section a:hover {
+            text-decoration: underline;
+        }
+
+footer {
             text-align: center;
             padding: 30px;
             font-size: 0.8rem;
@@ -155,72 +166,63 @@
     </style>
 </head>
 <body>
-
-<div class="container"> 
-    <aside class="sidebar">
-        <img src="images/vm.jpg" alt="Vitaly Moroz" class="profile-img">
-        
-        <h3 style="margin: 0; font-size: 1.4rem;">
-            <a href="https://www.swansea.ac.uk/staff/v.moroz/" target="_blank" style="text-decoration: none; color: var(--primary-color);">Vitaly Moroz</a>
-        </h3>
-        
-        <p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
-
-        <div class="contact-info">
-            <strong>Address:</strong><br>
-            Department of Mathematics<br>
-            Swansea University<br>
-            Swansea SA1 8EN<br> 
-			Wales, UK<br><br>
-            
-            <strong>Email:</strong><br>
-            <a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br><br>
-            
-            <strong>Office:</strong><br>
-            <a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" target="_blank" style="color: var(--text-color); text-decoration: none;">322 Computational Foundry</a>
-        </div>
-
-        <div class="social-icons">
-            <a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&s1=359396" target="_blank"><img src="images/msn.png" alt="MathSciNet"></a>
-			<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img src="images/arx.png" alt="arXiv"></a>
-            <a href="http://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
-            <a href="http://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
-        </div>
-    </aside>
-
-    <main class="main-content">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="teaching.html">Teaching</a></li>
-                    <li><a href="admin.html" class="active">Administration</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <article class="admin-section">
-            <h2>Administrative Roles</h2>
-            
-            <ul class="admin-list">
-                <li>Departmental <a href="https://2029.ref.ac.uk/" target="_blank" style="color: var(--accent-color); text-decoration: none;">REF2029</a> (UoA10) Lead: 2023–present</li>
-                <li>Head of Department: 2021–2024</li>
-                <li>Departmental Director of Research: 2017–2021</li>
-                <li>Member of College of Science Research Committee: 2015–2021</li>
-                <li>Departmental Examination Officer: 2012–2015</li>
-                <li>Level 0 Tutor for Mathematics: 2013–2014</li>
-                <li>Departmental Deputy Programme Director: 2012–2014</li>
-                <li>Chair of Departmental Learning and Teaching Committee: 2009–2011</li>
-                <li>Departmental Colloquium Secretary: 2007–2009</li>
-            </ul>
-        </article>
-    </main>
-
-    <footer>
-        &copy; 2026 Vitaly Moroz &bull; Swansea University &bull; Built with GitHub Pages
+<div class="container">
+<aside class="sidebar">
+<img alt="Vitaly Moroz" class="profile-img" src="images/vm.jpg"/>
+<h3 style="margin: 0; font-size: 1.4rem;">
+<a href="https://www.swansea.ac.uk/staff/v.moroz/" style="text-decoration: none; color: var(--primary-color);" target="_blank">Vitaly Moroz</a>
+</h3>
+<p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
+<div class="contact-info">
+<strong>Address:</strong><br/>
+            Department of Mathematics<br/>
+            Swansea University<br/>
+            Swansea SA1 8EN<br/> 
+			Wales, UK<br/><br/>
+<strong>Email:</strong><br/>
+<a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br/><br/>
+<strong>Phone:</strong><br>
++44 (0)1792 602763<br><br>
+<strong>Office:</strong><br/>
+<a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" style="color: var(--text-color); text-decoration: none;" target="_blank">322 Computational Foundry</a>
+</div>
+<div class="social-icons">
+<a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&amp;s1=359396" target="_blank"><img alt="MathSciNet" src="images/msn.png"/></a>
+<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img alt="arXiv" src="images/arx.png"/></a>
+<a href="https://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img alt="Google Scholar" src="images/gs.png"/></a>
+<a href="https://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img alt="ResearchGate" src="images/rg.png"/></a>
+</div>
+</aside>
+<main class="main-content">
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="teaching.html">Teaching</a></li>
+<li><a class="active" href="admin.html">Administration</a></li>
+</ul>
+</nav>
+</header>
+<article class="admin-section">
+<h2>Administrative Roles</h2>
+<ul class="admin-list">
+<li>Departmental <a href="https://2029.ref.ac.uk/" target="_blank">REF2029</a> (UoA10) Lead: 2023–present</li>
+<li>Head of Department: 2021–2024</li>
+<li>Departmental Director of Research: 2017–2021</li>
+<li>Member of College of Science Research Committee: 2015–2021</li>
+<li>Departmental Examination Officer: 2012–2015</li>
+<li>Level 0 Tutor for Mathematics: 2013–2014</li>
+<li>Departmental Deputy Programme Director: 2012–2014</li>
+<li>Chair of Departmental Learning and Teaching Committee: 2009–2011</li>
+<li>Departmental Colloquium Secretary: 2007–2009</li>
+</ul>
+</article>
+</main>
+<footer>
+        © 2026 Vitaly Moroz • Swansea University • Built with GitHub Pages
     </footer>
-</div> 
+</div>
 </body>
 </html>

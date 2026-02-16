@@ -1,18 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching | Vitaly Moroz</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Teaching | Vitaly Moroz</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
         :root {
             --primary-color: #2c3e50;
             --accent-color: #3498db;
@@ -85,7 +83,9 @@
         .social-icons img:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-2px); }
 
         .main-content {
-            padding: 50px 60px;
+            padding: 40px 50px;
+        
+            font-size: 0.9rem;
         }
 
         header h1 {
@@ -122,7 +122,7 @@
         nav a:hover { color: var(--accent-color); }
         nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
 
-        .teaching-section h2 { color: var(--primary-color); font-size: 1.6rem; margin: 30px 0 15px 0; }
+        .teaching-section h2 { color: var(--primary-color); font-size: 1.6rem; margin: 35px 0 15px 0; }
         .teaching-section h2:first-child { margin-top: 0; }
         
         .module-list {
@@ -139,7 +139,6 @@
         .module-list a {
             color: var(--accent-color);
             text-decoration: none;
-            font-weight: 600;
         }
 
         .module-list a:hover {
@@ -155,7 +154,17 @@
             font-size: 0.95rem;
         }
 
-        footer {
+        
+        .teaching-section a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .teaching-section a:hover {
+            text-decoration: underline;
+        }
+
+footer {
             text-align: center;
             padding: 30px;
             font-size: 0.8rem;
@@ -174,93 +183,82 @@
     </style>
 </head>
 <body>
-
-<div class="container"> 
-    <aside class="sidebar">
-        <img src="images/vm.jpg" alt="Vitaly Moroz" class="profile-img">
-        
-        <h3 style="margin: 0; font-size: 1.4rem;">
-            <a href="https://www.swansea.ac.uk/staff/v.moroz/" target="_blank" style="text-decoration: none; color: var(--primary-color);">Vitaly Moroz</a>
-        </h3>
-        
-        <p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
-
-        <div class="contact-info">
-            <strong>Address:</strong><br>
-            Department of Mathematics<br>
-            Swansea University<br>
-            Swansea SA1 8EN<br> 
-			Wales, UK<br><br>
-            
-            <strong>Email:</strong><br>
-            <a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br><br>
-            
-            <strong>Office:</strong><br>
-            <a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" target="_blank" style="color: var(--text-color); text-decoration: none;">322 Computational Foundry</a>
-        </div>
-
-        <div class="social-icons">
-            <a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&s1=359396" target="_blank"><img src="images/msn.png" alt="MathSciNet"></a>
-			<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img src="images/arx.png" alt="arXiv"></a>
-            <a href="http://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
-            <a href="http://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
-        </div>
-    </aside>
-
-    <main class="main-content">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="teaching.html" class="active">Teaching</a></li>
-                    <li><a href="admin.html">Administration</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <article class="teaching-section">
-            <h2>Current Modules</h2>
-            <ul class="module-list">
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-201&ayr=20/21&psl=TB1&detailOnly=false" target="_blank">MA-201</a> Multi-variable analysis</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-202&ayr=20/21&psl=TB2&detailOnly=false" target="_blank">MA-202</a> Metric spaces and measure theory</li>
-            </ul>
-
-            <div class="info-box">
-                All teaching resources including recent assignments etc. are posted on <strong><a href="https://canvas.swansea.ac.uk/" target="_blank" style="color: var(--primary-color); text-decoration: none;">Canvas</a></strong>.
-                <br><br>
-                If you think you are not enrolled for the relevant module, please send me an e-mail.
+<div class="container">
+<aside class="sidebar">
+<img alt="Vitaly Moroz" class="profile-img" src="images/vm.jpg"/>
+<h3 style="margin: 0; font-size: 1.4rem;">
+<a href="https://www.swansea.ac.uk/staff/v.moroz/" style="text-decoration: none; color: var(--primary-color);" target="_blank">Vitaly Moroz</a>
+</h3>
+<p style="color: #888; margin: 5px 0 20px 0; font-weight: 500;">Professor of Mathematics</p>
+<div class="contact-info">
+<strong>Address:</strong><br/>
+            Department of Mathematics<br/>
+            Swansea University<br/>
+            Swansea SA1 8EN<br/> 
+			Wales, UK<br/><br/>
+<strong>Email:</strong><br/>
+<a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br/><br/>
+<strong>Phone:</strong><br>
++44 (0)1792 602763<br><br>
+<strong>Office:</strong><br/>
+<a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" style="color: var(--text-color); text-decoration: none;" target="_blank">322 Computational Foundry</a>
+</div>
+<div class="social-icons">
+<a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&amp;s1=359396" target="_blank"><img alt="MathSciNet" src="images/msn.png"/></a>
+<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img alt="arXiv" src="images/arx.png"/></a>
+<a href="https://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img alt="Google Scholar" src="images/gs.png"/></a>
+<a href="https://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img alt="ResearchGate" src="images/rg.png"/></a>
+</div>
+</aside>
+<main class="main-content">
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a class="active" href="teaching.html">Teaching</a></li>
+<li><a href="admin.html">Administration</a></li>
+</ul>
+</nav>
+</header>
+<article class="teaching-section">
+<h2>Current Modules</h2>
+<ul class="module-list">
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-201&amp;ayr=20/21&amp;psl=TB1&amp;detailOnly=false" target="_blank">MA-201</a> Multivariable analysis</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-202&amp;ayr=20/21&amp;psl=TB2&amp;detailOnly=false" target="_blank">MA-202</a> Metric spaces and measure theory</li>
+</ul>
+<div class="info-box">
+                All teaching resources including recent assignments etc. are posted on <strong><a href="https://canvas.swansea.ac.uk/" target="_blank">Canvas</a></strong>.
+                <br/><br/>
+                If you think you are not enrolled for the relevant module, send me an e-mail.
             </div>
-
-            <h2>Past Modules at Swansea</h2>
-            <ul class="module-list">
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=any&mod=MA-M06&ayr=23/24&psl=TB1&detailOnly=false" target="_blank">MA-M06</a> Mathematics for Data Science</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-101&ayr=12/13&psl=TB1&detailOnly=false" target="_blank">MA-101</a> Introductory Calculus</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-102&ayr=12/13&psl=TB2&detailOnly=false" target="_blank">MA-102</a> Introductory Analysis</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-201&ayr=13/14&psl=TB1&detailOnly=false" target="_blank">MA-201</a> Real Analysis and Metric Spaces</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-202&ayr=13/14&psl=TB2&detailOnly=false" target="_blank">MA-202</a> Vector Calculus and Measure Theory</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-301&ayr=17/18&psl=TB1&detailOnly=false" target="_blank">MA-301</a> Complex Variables</li>
-                <li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&dept=MATH&mod=MA-311&ayr=17/18&psl=TB2&detailOnly=false" target="_blank">MA-311</a> Partial Differential Equations</li>
-                <li>MAA121 / MAG131 Differential Equations: <a href="./ODE/ODE-ln.pdf" target="_blank">Lecture Notes 2009/10</a></li>
-                <li>MAC221 Analysis 1</li>
-                <li>MAC223 Analysis 2</li>
-                <li>MAC321 Analysis 3</li>
-                <li>MAP255 Complex Analysis 1</li>
-                <li>MAP355 Complex Analysis 2</li>
-                <li>MAA301 Partial Differential Equations</li>
-                <li>MAP391 / MAPM91 Banach and Hilbert Spaces: <a href="./BHS/banach-ln.pdf" target="_blank">Lecture Notes 2008/09</a></li>
-            </ul>
-
-            <div class="info-box" style="background: #fafafa; border-left: 5px solid #ccc;">
-                I am a <a href="./misc/PR153884-HEA0294382.pdf" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Fellow</a> of the <a href="https://www.heacademy.ac.uk" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Higher Education Academy</a>, recognition reference PR153884.
+<h2>Past Modules at Swansea</h2>
+<ul class="module-list">
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=any&amp;mod=MA-M06&amp;ayr=23/24&amp;psl=TB1&amp;detailOnly=false" target="_blank">MA-M06</a> Mathematics for Data Science</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-101&amp;ayr=12/13&amp;psl=TB1&amp;detailOnly=false" target="_blank">MA-101</a> Introductory Calculus</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-102&amp;ayr=12/13&amp;psl=TB2&amp;detailOnly=false" target="_blank">MA-102</a> Introductory Analysis</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-201&amp;ayr=13/14&amp;psl=TB1&amp;detailOnly=false" target="_blank">MA-201</a> Real Analysis and Metric Spaces</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-202&amp;ayr=13/14&amp;psl=TB2&amp;detailOnly=false" target="_blank">MA-202</a> Vector Calculus and Measure Theory</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-301&amp;ayr=17/18&amp;psl=TB1&amp;detailOnly=false" target="_blank">MA-301</a> Complex Variables</li>
+<li><a href="https://intranet.swan.ac.uk/catalogue/default.asp?type=moddetail&amp;dept=MATH&amp;mod=MA-311&amp;ayr=17/18&amp;psl=TB2&amp;detailOnly=false" target="_blank">MA-311</a> Partial Differential Equations</li>
+<li>MAA121 / MAG131 Differential Equations: <a href="./ODE/ODE-ln.pdf" target="_blank">Lecture Notes 2009/10</a></li>
+<li>MAC221 Analysis 1</li>
+<li>MAC223 Analysis 2</li>
+<li>MAC321 Analysis 3</li>
+<li>MAP255 Complex Analysis 1</li>
+<li>MAP355 Complex Analysis 2</li>
+<li>MAA301 Partial Differential Equations</li>
+<li>MAP391 / MAPM91 Banach and Hilbert Spaces: <a href="./BHS/banach-ln.pdf" target="_blank">Lecture Notes 2008/09</a></li>
+</ul>
+<div class="info-box" style="background: #fafafa; border-left: 5px solid #ccc;">
+                I am a <a href="./misc/PR153884-HEA0294382.pdf" target="_blank">Fellow</a> of the <a href="https://www.heacademy.ac.uk" target="_blank">Higher Education Academy</a>, recognition reference PR153884.
             </div>
-        </article>
-    </main>
-
-    <footer>
-        &copy; 2026 Vitaly Moroz &bull; Swansea University &bull; Built with GitHub Pages
+</article>
+</main>
+<footer>
+        © 2026 Vitaly Moroz • Swansea University • Built with GitHub Pages
     </footer>
-</div> 
+</div>
 </body>
 </html>

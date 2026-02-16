@@ -85,7 +85,8 @@
         .social-icons img:hover { filter: grayscale(0%); opacity: 1; transform: translateY(-2px); }
 
         .main-content {
-            padding: 50px 60px;
+            padding: 40px 50px;
+            font-size: 0.9rem;
         }
 
         header h1 {
@@ -122,10 +123,19 @@
         nav a:hover { color: var(--accent-color); }
         nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
 
-        .about-section h2 { color: var(--primary-color); font-size: 1.6rem; margin-top: 0; }
-        .about-section p { margin-bottom: 1.5rem; text-align: justify; color: #444; }
+        .about-section h2 { color: var(--primary-color); font-size: 1.2rem; margin: 18px 0 8px 0; }
+        .about-section h2:first-child { margin-top: 0; }
+        .about-section p { margin: 0.6rem 0; text-align: justify; color: #444; }
 
-        .fellowship-box {
+        
+        /* Link styling in main content (match research page) */
+        .main-content article a { color: var(--accent-color); text-decoration: none; }
+        .main-content article a:hover { text-decoration: underline; }
+
+        /* Fellowship box link: keep primary colour but same underline-on-hover behaviour */
+        .fellowship-box a { color: var(--primary-color); text-decoration: none; }
+        .fellowship-box a:hover { text-decoration: underline; }
+.fellowship-box {
             background: #f0f9ff;
             padding: 25px;
             border-radius: 8px;
@@ -200,6 +210,9 @@
             <strong>Email:</strong><br>
             <a href="mailto:v.moroz@swansea.ac.uk" style="color: var(--accent-color); text-decoration: none;">v.moroz@swansea.ac.uk</a><br><br>
             
+			<strong>Phone:</strong><br>
+            +44 (0)1792 602763<br><br>
+			
             <strong>Office:</strong><br>
             <a href="https://www.swansea.ac.uk/media/BayCampusMap.pdf" target="_blank" style="color: var(--text-color); text-decoration: none;">322 Computational Foundry</a>
         </div>
@@ -207,8 +220,8 @@
         <div class="social-icons">
             <a href="http://www.ams.org/mathscinet/search/publications.html?pg1=INDI&s1=359396" target="_blank"><img src="images/msn.png" alt="MathSciNet"></a>
 			<a href="http://arxiv.org/a/moroz_v_2" target="_blank"><img src="images/arx.png" alt="arXiv"></a>
-            <a href="http://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
-            <a href="http://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
+            <a href="https://scholar.google.co.uk/citations?user=RUIkeP8AAAAJ" target="_blank"><img src="images/gs.png" alt="Google Scholar"></a>
+            <a href="https://researchgate.net/profile/Vitaly_Moroz/" target="_blank"><img src="images/rg.png" alt="ResearchGate"></a>            
         </div>
     </aside>
 
@@ -233,7 +246,7 @@
 
 			<div class="fellowship-box">
                 <strong style="color: var(--primary-color);">
-                    <a href="https://www.leverhulme.ac.uk/listings?field_grant_scheme_target_id=13" target="_blank" style="color: var(--primary-color); text-decoration: none;"> Leverhulme Trust Research Fellowship (2025)</a>
+                    <a href="https://www.leverhulme.ac.uk/listings?field_grant_scheme_target_id=13" target="_blank"> Leverhulme Trust Research Fellowship (2025)</a>
                 </strong><br>
                 Awarded for the project <em>"Modified self-gravitating Bose-Einstein condensates."</em>
             </div>

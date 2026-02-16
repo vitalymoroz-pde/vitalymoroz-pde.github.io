@@ -138,14 +138,20 @@
         nav a:hover { color: var(--accent-color); }
         nav .active { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); }
 
-        .about-section h2 { color: var(--primary-color); font-size: 1.6rem; margin-top: 0; }
+        .about-section h2 { color: var(--primary-color); font-size: 1.2rem; margin-top: 0; }
         .about-section p { margin-bottom: 1.5rem; text-align: justify; color: #444; }
 
         /* Page-specific spacing for long lists */
         .section-block { margin-bottom: 18px; }
-        .section-block h2 { margin-bottom: 10px; }
-        .section-block ul { margin-top: 10px; padding-left: 1.2rem; }
-        .section-block li { margin: 0.4rem 0; }
+
+/* Link styling (match research.html) */
+        .main-content article a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        .main-content article a:hover {
+            text-decoration: underline;
+        }
 
         footer {
             text-align: center;
@@ -241,11 +247,11 @@
             <div class="section-block">
                 <h2>Editorial</h2>
                 <ul>
-                    <li>Editorial Board member of the <em><a href="https://www.lms.ac.uk/publications/journals">Bulletin and Journal of the London Mathematical Society</a></em> (2026– )</li>
-                    <li>Editorial Board member of the <em><a href="https://royalsocietypublishing.org/journal/rsta">Philosophical Transactions of the Royal Society A</a></em> (2022– )</li>
-                    <li>Editorial Board member of the <em><a href="http://www.cambridge.org/core/journals/proceedings-of-the-royal-society-of-edinburgh-section-a-mathematics">Proceedings of the Royal Society of Edinburgh: Section A Mathematics</a></em> (2013–2025)</li>
-                    <li>Subject editor in Analysis for <em><a href="http://journals.cambridge.org/action/displayJournal?jid=GMJ">Glasgow Mathematical Journal</a></em> (2010–2021)</li>
-                    <li>Editorial Board member of <em><a href="http://www.tandf.co.uk/journals/journal.asp?issn=1747-6933&linktype=1">Complex Variables and Elliptic Equations</a></em> (2011–2021)</li>
+                    <li>Editorial Board member of the <a href="https://www.lms.ac.uk/publications/journals">Bulletin and Journal of the London Mathematical Society</a> (2026– )</li>
+                    <li>Editorial Board member of the <a href="https://royalsocietypublishing.org/journal/rsta">Philosophical Transactions of the Royal Society A</a> (2022– )</li>
+                    <li>Editorial Board member of the <a href="http://www.cambridge.org/core/journals/proceedings-of-the-royal-society-of-edinburgh-section-a-mathematics">Proceedings of the Royal Society of Edinburgh: Section A Mathematics</a> (2013–2025)</li>
+                    <li>Subject editor in Analysis for <a href="http://journals.cambridge.org/action/displayJournal?jid=GMJ">Glasgow Mathematical Journal</a> (2010–2021)</li>
+                    <li>Editorial Board member of <a href="http://www.tandf.co.uk/journals/journal.asp?issn=1747-6933&linktype=1">Complex Variables and Elliptic Equations</a> (2011–2021)</li>
                 </ul>
             </div>
 
@@ -260,7 +266,7 @@
             </div>
 
             <div class="section-block">
-                <h2>Meetings organisation</h2>
+                <h2>Meeting organisation</h2>
                 <ul>
                     <li><a href="https://icms.ac.uk/activities/workshop/uk-japan-workshop-on-nonlinear-pdes-singularities-and-asymptotic-patterns-in-fluids-chemotaxis-and-geometric-pdes/">UK-Japan Workshop on Nonlinear PDEs: Singularities and asymptotic patterns in Fluids, Chemotaxis and Geometric PDEs</a> (ICMS, Bayes Centre, Edinburgh, 30 June – 4 July 2025)</li>
                     <li><a href="SSS-PDE-2024/">Swansea Summer School in Nonlinear PDEs</a> (Swansea, 1–5 July 2024)</li>
@@ -347,8 +353,9 @@
             <div class="section-block">
                 <h2>Research grants</h2>
                 <ul>
-                    <li><a href="https://www.leverhulme.ac.uk/listings?field_grant_scheme_target_id=13" target="_blank">Leverhulme Trust</a> Research Fellowship, 2025–26.</li>
-                    <li>The Royal Society International Exchanges Cost Share - NSFC, China, 2020–26.</li>
+                    <li>Leverhulme Trust Research Fellowship, 2025–26.</li>
+                    <li>ICMS (International Centre for Mathematical Sciences) Workshop Grant for the “UK-Japan Workshop on Nonlinear PDEs” (Edinburgh, July 2025)
+					<li>The Royal Society International Exchanges Cost Share - NSFC, China, 2020–26.</li>
                     <li>LMS Scheme 1 Conference Grant, 2019.</li>
                     <li>Leverhulme Trust Visiting Professorship - Professor Friedemann Brock, 2018–19.</li>
                     <li>LMS Scheme 1 Conference Grant, 2018.</li>
