@@ -1,0 +1,23 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{a4wide}
+\begin{document}
+
+\title{The divergence of continuous vector fields}
+\author{Augusto Ponce (Louvaine-la-Neuve, Belgium)}
+
+
+\maketitle
+
+\thispagestyle{empty}
+
+\noindent
+{\bf Abstract.}
+I will explain some results concerning the existence of
+continuous vector fields in the Euclidean space of dimension \(N\) when
+the divergence is prescribed. Up to an \(L^1\) perturbation of the data,
+this is always the case if the divergence does not charge sets of finite
+Hausdorff measure of dimension \(N-1\).
+
+
+
+end{document} 
