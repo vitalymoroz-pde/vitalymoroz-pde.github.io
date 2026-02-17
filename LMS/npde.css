@@ -1,0 +1,59 @@
+/* npde - CSS */
+
+body{
+color: #000066; 
+font-family: Arial, Helvetica, sans-serif;
+}
+
+p {margin-top: 7;}
+li{margin-left:-15;}
+
+.frame {
+width: 925px;
+margin: 10px;
+padding: 10px;
+border: 1px solid gray;
+}
+
+.header{ font-size: 12pt; }
+
+.content{ font-size: 10pt; font-family: Verdana, Helvetica, Geneva, Arial, sans-serif;}
+
+.menu{ font-size: 10pt; font-weight: bold;}
+
+.footer{ font-size: 8pt;}
+
+a:link {color: #044CA5;}
+
+.menu a:link, 
+.menu a:visited {
+display: block;
+text-decoration: none;
+ 
+border-bottom: 1px solid #000066;
+padding: 3px 4px 3px 4px;
+color: #000066;
+}
+.menu a:hover {
+color: #044CA5;
+}
+
+.header a:link, 
+.header a:visited {
+
+text-decoration: none;
+color: #000066;
+}
+.header a:hover {
+color: #044CA5;
+}
+
+
+font.data{font-size: 85%;}
+font.red{color: #cc0000;}
+
+.nav{letter-spacing: 2px;}
+
+.ver{font-size: 9pt; color: #044CA5;}
+
+

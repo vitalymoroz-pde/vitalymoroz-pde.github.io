@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<title>Symmetries and asymptotic patterns in Nonlinear PDEs: Swansea 10-12 June 2019</title>
+<link href="npde.css" type="text/css" rel="stylesheet">
+<meta content="text/html; charset=windows-1251">
+<meta name="description" content="Symmetries and asymptotic patterns in Nonlinear PDEs: Swansea 10-12 June 2019">
+<!--https://tinyurl.com/y2hbjg97-->
+
+
+<body>
+<div align="center">
+<div class="frame">
+<table summary="main body" cellpadding="10" cellspacing="5" width="900">
+<tr>
+<td colspan=2 align="middle" class="header">
+<a href="http://www.explore-gower.co.uk/">
+<img src="rhossili.png" height="70" width="900" border="0" alt="Rhossili bay">
+</a>
+
+</tr>
+
+<tr>
+<td width="200" valign="top" align="middle" class="header">
+<a href="http://www.swan.ac.uk/">
+<img src="SU_logo_cr.png" width="160" height="100" hspace="0" vspace="0" border="0" alt="Swansea University"></a>
+<td width="700" valign="top" align="right" class="header">
+<h2>Workshop on Symmetries and Asymptotic patterns</h2>
+<h2>in Nonlinear Partial Differential Equations</h2>
+<h3><span class="emph">10-12 June 2019</span></h3>
+<p>
+<a href="http://maths.swan.ac.uk/"><span class="emph">Mathematics Department,</span></a>
+<a href="http://www.swan.ac.uk/"><span class="emph">Swansea University</span></a>
+<br><br>
+<hr width="70%" align="right">
+
+</tr>
+
+<tr>
+<td width="200" valign="top">
+
+<div width="195" valign="top" align="left" class="menu">
+<div class="nav"><a href="index.html">Home page</a></div>
+<div class="nav"><a href="programme.html">Programme</a></div>
+<div class="nav"><a href="travel.html">Travel information</a></div>
+<p>
+<a href="register.html"><span class="ver">Registration</span></a>
+</div>
+<br>
+
+
+<div align="center">
+<a href="http://www.lms.ac.uk/" title="LMS">
+<img src="LMS_logo_new_cr.png" width="195" height="68" hspace="0" vspace="20" border="0" alt="LMS"></a>
+
+<a href="https://www.leverhulme.ac.uk/" title="Leverhulme Trust">
+<img src="Leverhulme_logo_small.jpg" width="195" height="60" hspace="0" vspace="20" border="0" alt="LMS"></a>
+</div>
+
+
+
+
+
+
+<td width="700" valign="top" class="content">
+
+
+<!-- Insert text here -->
+
+Nonlinear Partial Differential Equations (PDEs) are a universal language of science for describing natural phenomena.
+Understanding the symmetries and asymptotic properties of solutions to stationary and time dependent nonlinear PDEs often provides the key 
+to finding the actual solutions and their properties, such as regularity, stability, front propagation.
+It is also fundamental in the numerical analysis of nonlinear PDEs.
+The aim of the workshop is to bring to Swansea a group of leading international experts on symmetries and asymptotic behaviour in nonlinear PDEs 
+for an exchange of ideas and update on most recent advances in these areas which will foster new collaborations.
+
+<!--<p>
+The research topics of the workshop will focus around two closely interconnected themes:
+
+<ul>
+<li>
+isoperimetric inequalities
+<li>
+symmetry breaking in PDE
+</ul>
+-->
+
+<p>
+The meeting is open to all and will provide an opportunity for established as well as early career researchers to present their recent results.
+Poster session for PhD students will be organised as a part of the workshop programme.  
+
+
+<br>
+<br>
+
+<div class="nav"><b>Invited Speakers (tentative)</b> </div>
+
+<ul type="circle">
+
+<li><a href="abs/cb.pdf">Catherine Bandle</a> (Basel)
+<li><a href="abs/mvdb.pdf">Michiel van den Berg</a> (Bristol)
+<!--<li>Jose Carrillo (Imperial College London)-->
+<li><a href="abs/jc.pdf">Jos&eacute; Carrillo</a> (Imperial)
+<li><a href="abs/pc.pdf">Paolo Caldiroli</a> (Turin)
+<li><a href="abs/fc.pdf">Francesco Chiacchio</a> (Naples)
+<li><a href="abs/gc.pdf">Gisella Croce</a> (Le Havre)
+<li><a href="abs/ec.pdf">Elaine Crooks</a> (Swansea)
+<li><a href="abs/gc.pdf">Gyula Csat&oacute;</a> (BarcelonaTech)
+<li><a href="abs/nd.pdf">Norman Dancer</a> (Swansea)
+<li><a href="abs/ff.pdf">Filomena Feo</a> (Naples)
+<!--<li><a href="abs/mdp.pdf">Manuel Del Pino</a> (University of Bath)--> 
+<li><a href="abs/df.pdf">Dmitri Finkelshtein</a> (Swansea)
+<li><a href="abs/img.pdf">Ivor McGillivray</a> (Bristol)
+<li><a href="abs/am.pdf">Anna Mercaldo</a> (Naples)
+<li><a href="abs/cm.pdf">Carlo Mercuri</a> (Swansea)
+<li><a href="abs/mm.pdf">Monica Musso</a> (Bath) 
+<!--<li><a href="abs/mr.pdf">Michael Ruzhansky</a> (Imperial College London)-->
+<li><a href="abs/aw.pdf">Alfred Wagner</a> (RWTH Aachen) 
+
+</ul>
+
+<p>
+Limited funds are available to contribute to expenses of UK postgraduate students, see Registration page for more details.
+<br>
+<br>
+
+
+
+<!--
+<br>
+<em>Slides of all the talks could be downloaded under the links above.</em>
+<br>
+<br>
+-->
+
+<hr width="80%" align="center">
+<br>
+
+
+
+
+<div class="nav"><b>Organizers</b></div>
+
+<ul type="square">
+<li> <a href="abs/ec.pdf">Friedemann Brock</a> (Swansea University): Friedemann.Brock 'at' swansea.ac.uk
+<li> <a href="abs/vm.pdf">Vitaly Moroz</a> (Swansea University): v.moroz 'at' swansea.ac.uk
+</ul>
+
+<br>
+The meeting is supported by the <a href="http://www.lms.ac.uk/">London Mathematical Society</a> via Conference Grants - Scheme 1 
+and by the Research Fund of Swansea University College of Science.
+<br>
+<br>
+Friedemann Brock is visiting Mathematics Department of Swansea University from Septembers 2018 until August 2019. 
+His visiting professorship has been made possible by the <a href="https://www.leverhulme.ac.uk/">Leverhulme Trust</a>.
+
+<!--
+<div class="nav"><b>Download <a href="poster.pdf" title="Poster">Poster</a> of the Workshop </b></div>
+<br>
+-->
+
+
+
+
+
+<!--
+<tr>
+<td colspan=2 align="center">
+<img src="pics/pict.jpg" title="Workshop Photo" alt="Workshop Photo" height="500" width="900" align="middle">
+<div align="center">
+<small>Download the full size picture <a href="pics/pict_cr.jpg">here</a> (1.6 MB)</small>
+-->
+</div>
+
+
+
+
+
+<tr>
+<td colspan=2 class="footer">
+<img src="swansea.png" height="78" width="900" align="middle" alt="Swansea logo">
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+</body>
+</html>

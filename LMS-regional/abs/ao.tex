@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{a4wide}
+\begin{document}
+
+\title{On the numerical relaxation of single-slip plasticity\\ in finite strains}
+\author{Antonio Orlando (Swansea)}
+\date{In collaboration with: Sergio Conti (Bonn) and\\ Carsten Carstensen (HU-Berlin)}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\noindent
+{\bf Abstract.}
+The modeling of the elastoplastic behavior of single crystals
+with infinite latent hardening 
+leads to a nonconvex energy density, whose
+minimization produces fine structures. The effective macroscopic behaviour 
+can be characterised by means of the quasiconvex
+envelope of the energy density; unfortunately a closed form expression
+for the latter is known only in few very  simplified cases. 
+One is therefore lead to a new computational challenge, namely
+numerical relaxation. This is  faced with huge numerical difficulties 
+since it involves the minimization of a nonconvex function with clusters of local minima. 
+
+\smallskip With the objective of gaining better insight in the type of
+microstructure that can develop, and in the type of numerical
+minimization algorithm that can be used for the relaxation, we study a
+simplified model problem in two-dimensional, geometrically nonlinear
+plasticity, with a single slip system and a linear hardening law. A
+different  analysis of the relaxation of the same model was previously
+given in \cite{BarCarHacHop04,MieLamGue04}. 
+
+\smallskip By constraining the elastic part of
+the deformation to be a rotation, we consider a first example where the dissipation contribution to the 
+incremental energy is neglected, and a second one where the plastic free energy is neglected.
+For both cases,
+the quasiconvexification of the energy density can be determined in closed form \cite{ConPre,ConThe05}.
+
+\smallskip More refined models are then obtained by assuming the microstructure to
+have the  form of a  laminate of second order which 
+is supported either on rigid-plastic deformations, or on purely elastic ones,
+or on a mixture of purely elastic and plastic ones.
+In all these cases the relaxation can be reduced to the minimization of a
+function of only one variable.
+
+\smallskip We use the above results for 
+the numerical minimization of the full energy density, including
+dissipation, and removing the kinematic constraint.
+We then assess the precision of our relaxation by determining at each 
+macroscopic strain a polyaffine function which coincides with the unrelaxed energy on the 
+support of the laminate and checking that
+it is below the condensed energy, up to a very small error.
+
+\smallskip We conclude with some numerical examples and comparisons with the 
+literature \cite{BarCarHacHop04,MieLamGue04,CarConOrl08}.
+
+
+
+{\small
+\begin{thebibliography}{99} 
+
+\bibitem{BarCarHacHop04} 
+        Bartels S., Carstensen C, Hackl K., Hoppe U., 
+        \textit{Effective relaxation for microstructure simulations: 
+	algorithms and applications}, Comput. Meth. Appl.
+        Mech. Engng. 193, 5143-5175, (2004)   
+
+\bibitem{ConPre} 
+        Conti S., 
+        \textit{Relaxation of single-slip single-crystal plasticity with 
+        linear self-hardening}, In: Proceedings of the 3rd Conference on 
+	`Multiscale Materials Modeling', P. Gumbsch (Ed.), Freiburg, 2006, 81-85 
+
+\bibitem{ConThe05}
+	Conti S., Theil F.,
+	\textit{Single-slip elastoplastic microstructures},
+	Arch. Rational Mech. Anal. 178, 125-148, (2005)
+
+\bibitem{MieLamGue04}
+	Miehe C., Lambrecht M., G\"{u}rses E., 
+	\textit{Analysis of material instabilities in inelastic solids by incremental energy minimization
+	and relaxation methods: evolving deformation microstructures in finite plasticity},
+	J. Mech. Phy. Solids 52, 2725-2769 (2004)
+
+\bibitem{CarConOrl08}
+        Carstensen C., Conti S., Orlando A.,
+        \textit{Mixed analytical-numerical relaxation in single-slip crystal plasticity},
+        Accepted for publication in Cont. Mech. \& Thermod. 
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

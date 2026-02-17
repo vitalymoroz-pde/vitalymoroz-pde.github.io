@@ -1,0 +1,168 @@
+\documentclass{amsart}
+%\usepackage{showkeys}
+%\documentclass[12pt]{iopart}
+
+\usepackage{amssymb,amsfonts}
+\usepackage{color}
+%\usepackage{showlabels}
+
+\setlength{\oddsidemargin}{-0.4cm}
+\setlength{\evensidemargin}{-0.4cm}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\textheight}{24cm}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{Conjecture}[theorem]{Conjecture}
+\newtheorem{assumption}{Assumption}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{Algorithm}{Algorithm}[section]
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conj}[theorem]{Conjecture}
+\newtheorem{Lemma}[theorem]{Lemma}
+\newtheorem{Corollary}[theorem]{Corollary}
+\newtheorem{Definition}[theorem]{Definition}
+\newtheorem{Example}[theorem]{Example}
+\newtheorem{Notation}{Notation}
+\newtheorem{Theorem}[theorem]{Theorem}
+\newtheorem{Remark}[theorem]{Remark}
+\newtheorem{Proposition}{Proposition}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\beq}{\begin{equation*}}
+\newcommand{\eeq}{\end{equation*}}
+\newcommand{\ben}{\begin{eqnarray}}
+\newcommand{\een}{\end{eqnarray}}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+\newcommand{\s}{ {\mathcal{x}}}
+\newcommand{\At}{ {\widetilde{A}}}
+\def\Gammat{{\widetilde{\Gamma}}}
+\def\gammat{{\widetilde{\gamma}}}
+\def\wt{\tilde{w}}
+\newcommand{\Hc}{ {\mathcal{H}}}
+\def\cK{{\mathcal K}}
+\def\cH{{\mathcal H}}
+\newcommand{\K}{ {\mathcal{K}}}
+\newcommand{\cL}{ {\mathcal{L}}}
+\newcommand{\Sc}{ {\mathcal{S}}}
+\newcommand{\Sct}{ {\widetilde{\mathcal{S}}}}
+\newcommand{\Sco}{ {\overline{\mathcal{S}}}}
+\newcommand{\Scto}{ {\overline{\widetilde{\mathcal{S}}}}}
+\newcommand{\Tc}{ {\mathcal{T}}}
+\newcommand{\sign}{\mbox{\rm sign}}
+\def\ker{{\mathrm{ker\,}}}
+\def\Ran{{\mathrm{Ran\,}}}
+\def\Span{{\mathrm{Span\,}}}
+\newcommand{\Rr}{{\mathbb{R}}}
+\newcommand{\Nn}{{\mathbb{N}}}
+\newcommand{\Cc}{{\mathbb{C}}}
+\newcommand{\Zz}{{\mathbb{Z}}}
+\newcommand{\lek}{ \Lambda_{\eta,K}}
+\newcommand{\Eta}{\eta}
+\newcommand{\Zeta}{\zeta}
+\newcommand{\llangle}{\left\langle}
+\newcommand{\rrangle}{\right\rangle}
+\renewcommand{\ll}{\left\langle}
+\newcommand{\rr}{\right\rangle}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\A}{A}
+\def\C{\mathbb C}
+\def\R{\mathbb R}
+\def\N{\mathbb N}
+\def\Z{\mathbb Z}
+\def\CD{ D}
+\newcommand{\fH}{{\frak H}}
+\newcommand{\supp}{\mbox{\rm supp}}
+\newcommand{\essran}{\mbox{\rm essran}}
+
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\trinorm}[1]{\left\vert\!\vert\! \vert#1\vert\!\vert\!\right\vert}
+
+\newcommand{\twovec}[2]{\left(\begin{array}{c} #1 \\  #2 \end{array}\right)}
+
+\begin{document}
+The first LMS Bath-WIMCS Analysis Day took place in Swansea on Friday 20th March:
+\[ \mbox{\tt
+http://math.swansea.ac.uk/staff/vm/LMS-WIMCS-Bath-2015/} \]
+Our intention was that each meeting in this series should involve a selection of topics from those
+proposed in the application, to encourage the widest possible attendance. In fact all three topics
+(calculus of variations and nonlinear PDEs; asymptotics, homogenisation and applications; spectral
+theory and related topics) were represented in this meeting, although a common theme emerged
+around homogenisation which appeared in different guises in four of the five talks.
+\vspace{2mm}
+
+\noindent {\bf Federica Dragoni (Cardiff)} spoke on `Stochastic homogenisation for Hamilton-Jacobi equations'.
+She reviewed two 1999 papers (of Souganidis and of Rezakhanlou and Tarver) which deal with
+the equation
+\[ u_t^\varepsilon + H(x/\varepsilon,Du,\omega) = 0, \;\;\; x\in {\mathbb R}^N, \]
+in which $\omega$ is a random variable and the Hamiltonian $H$ satisfies a special Lipschitz condition
+with respect to its first argument. It turns out that if $H$ is stationary ergodic then the homogenised problem
+is deterministic, in the sense that the viscosity solutions converge to a function which does not depend on
+$\omega$.
+
+In the second part of her talk, Dr Dragoni spoke about her own recent work with Mannucci and Marchi,
+dealing with stochastic homogenisation for a Hamiltonian of the form $H(x/\varepsilon,\sigma(x)Du, \omega)$
+in which $\sigma$ is a matrix of Carnot type. Carnot groups are anisotropic at every scale, so the scale
+$x/\varepsilon$ has to be adapted to the new group structure and additional difficulties arise from the
+fact that the method of approximating initial conditions by affine functions now fails.
+\vspace{2mm}
+
+\noindent {\bf Alexander Kiselev (L'viv, Ukraine)} spoke on `Mathematical modelling of scattering in the presence of
+metamaterial objects'. His talk reviewed the models in the literature to date and presented recent joint work with Cherednichenko
+in one and two dimensions, in particular on the rigorous construction of scattering matrix in the low-energy limit. Their approach
+allows not only a superlens of an arbitrary geometry, but also illuminates the origin and particulars of the process of cloaking.
+They showed that the problem of cloaking can be explained in terms of `resonances' for the compact scatterer, whose
+spectral properties give rise to cloaking.
+\vspace{2mm}
+
+{\bf \noindent Valery Smyshlyaev (UCL) } spoke on `Two-scale homogenisation of a general class of high-contrast PDE systems'.
+The first part of this talk was a review suitable for a general audience of mathematical analysts, while the second part presented
+joint work with Cooper (formerly Leverhulme-WIMCS Fellow in Cardiff, now in Montpellier, soon to move to Bath) and Kamotski (UCL).
+For a general class of high-contrast PDE systems, they show that under a decomposition assumption a two-scale version of the strong
+resolvent convergence holds, with a well-defined two-scale limit operator. This implies two-scale convergence of semigroups with
+applications to a wide class of micro-resonant time-dependent problems.
+\vspace{2mm}
+
+\noindent {\bf Matthew Lettington (Cardiff)} gave our only talk in analytic number theory, on `Higher dimensional interlacing Fibonacci
+sequences, continued fractions and Chebyshev polynomials.' He presented joint work with Hindmarsh and Pryce studying higher-dimensional
+interlacing Fibonacci sequences and their multi-dimensional continued fractions, generated both from Chebyshev type functions and $m$-dimensional
+recurrence relations. For each $m$, there exist both rational and integer versions of these sequences and the underlying $p$-adic structure of the
+rational sequence allows recovery of  enables the integer sequence. In particular, for the positive index sequences, one can clear fractions by knowing
+the number of prime divisors of $2m + 1$; in the negative index case the `excess' prime factors can be removed using Weisman?s congruence.
+When $2m + 1$ is a prime these two processes come into alignment.
+From either the rational or the integer sequences, Lettington showed how to construct a continued fraction vector in ${\mathbb  Q}^m$, which converges
+to an irrational algebraic point in ${\mathbb R}^m$. The sequence terms can be expressed as simple recurrences, trigonometric sums, binomial
+polynomials and as sums over ratios of powers of the diagonals of the regular unit $m$-gon. These sequences exhibit a `rainbow' quality, corresponding
+to the Fleck numbers at negative indices and the $m$-dimensional Fibonacci numbers at positive indices. The families of orthogonal generating polynomials
+defining the recurrence relations employed turn out to be divisible by the minimal polynomials of certain algebraic numbers, and the three-term recurrences
+and differential equations for these polynomials can be found.
+\vspace{2mm}
+
+\noindent{\bf Lucia Scardia (Bath)} spoke on `Homogenisation of dislocation dynamics'. Plastic deformation of a metal is caused by the movement of
+curve-like defects (called dislocations) in its crystal lattice. It is not known how to use this microscale information to make theoretical predictions at the
+macroscopic scale. Nevertheless, macroscopic plasticity is heavily dependent on dynamic properties of the dislocation curves. Mora, Peletier and Scardia
+recently upscaled a time-dependent system of discrete, interacting dislocations by combining Gamma-convergence methods with the theory of rate-independent
+systems. In the continuum limit they obtain an evolution law for the dislocation density. The talk presented this result and possible extensions to more realistic
+complex systems.
+
+
+\begin{tabular}{ll}
+Attendance & Male/Female\\
+\hline
+Invited speakers        &          3/2\\
+Research students (host inst) &    4/2\\
+Research students (other inst’s) &  5/0\\
+Other participants (host inst) &   6/1\\
+Other participants (other inst’s) & 2/0\\
+Total                           & 20/5\\
+\end{tabular}
+
+
+\end{document}
+

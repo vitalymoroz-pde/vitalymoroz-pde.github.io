@@ -1,0 +1,38 @@
+\documentclass[11pt,a4paper,leqno]{article}
+\begin{document}
+
+
+\title{Parabolic problems\\ with dynamic boundary conditions}
+\author{Catherine Bandle}
+\date{(Basel, Switzerland)}
+
+\maketitle
+
+
+\begin{abstract}
+An existence theory for local solutions of a parabolic problem
+under a dynamical boundary condition $\sigma u_t+u_n=0$ is developed and a
+spectral representation formula is derived. It relies on the spectral theory
+of an associated elliptic
+problem with the eigenvalue parameter both in the equation and the boundary
+condition. The well--posedness of the parabolic problem holds in some natural
+space only if the number of negative
+eigenvalues is finite. This depends on the parameter $\sigma$ in
+the boundary condition. If $\sigma\geq 0$ the parabolic problem is always
+well-posed. For $\sigma<0$ it is well-posed only if the space dimension is $1$
+and ill-posed in space dimension $\geq 2$. By means of the theory of compact
+operators the spectrum is analyzed and some qualitative properties of the
+eigenfunctions are derived. An interesting phenomenon
+is the ``parameter-resonance'', where for a specific parameter-value
+$\sigma_0$ two eigenvalues of the elliptic problem cross. Depending on the time
+some qualitative properties will be discussed. 
+
+
+
+\end{abstract}
+
+
+
+
+
+\end{document}

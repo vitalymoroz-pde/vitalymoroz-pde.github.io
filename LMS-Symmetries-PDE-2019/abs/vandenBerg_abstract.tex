@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage{amsfonts,amssymb,amsmath,comment}
+\usepackage{graphicx,graphics,color}
+\usepackage[notcite]{showkeys}
+
+
+%%%%%%%%% PAGE LAY-OUT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\topmargin -0.5in \textheight 9in \oddsidemargin 0.15in
+\evensidemargin 0.25in \textwidth 6.15in
+
+%%%%%%%%%  LABELS FOR THEOREMS AND EQUATIONS SEPARATELY %%%%%%%%
+
+ \makeatletter
+ \@addtoreset{equation}{section}
+ \makeatother
+
+ \newcounter{enunciato}[section]
+
+ \renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+ \newtheorem{ittheorem}{Theorem}
+ \newtheorem{itlemma}{Lemma}
+ \newtheorem{itproposition}{Proposition}
+ \newtheorem{itdefinition}{Definition}
+ \newtheorem{itcorollary}{Corollary}
+ \newtheorem{itconjecture}{Conjecture}
+
+ \renewcommand{\theittheorem}{\thesection.\arabic{enunciato}}
+ \renewcommand{\theitlemma}{\thesection.\arabic{enunciato}}
+ \renewcommand{\theitproposition}{\thesection.\arabic{enunciato}}
+ \renewcommand{\theitdefinition}{\thesection.\arabic{enunciato}}
+ \renewcommand{\theitcorollary}{\thesection.\arabic{enunciato}}
+ \renewcommand{\theitconjecture}{\thesection.\arabic{enunciato}}
+
+ \newenvironment{theorem}{\addtocounter{enunciato}{1}
+ \begin{ittheorem}}{\end{ittheorem}}
+
+ \newenvironment{lemma}{\addtocounter{enunciato}{1}
+ \begin{itlemma}}{\end{itlemma}}
+
+ \newenvironment{proposition}{\addtocounter{enunciato}{1}
+ \begin{itproposition}}{\end{itproposition}}
+
+ \newenvironment{definition}{\addtocounter{enunciato}{1}
+ \begin{itdefinition}}{\end{itdefinition}}
+
+ \newenvironment{corollary}{\addtocounter{enunciato}{1}
+ \begin{itcorollary}}{\end{itcorollary}}
+
+ \newenvironment{conjecture}{\addtocounter{enunciato}{1}
+ \begin{itconjecture}}{\end{itconjecture}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\parskip=3pt plus 1pt minus 1pt
+
+\newcommand{\halmos}{\rule{1ex}{1.4ex}}
+\newcommand{\UUU}{\color{blue}}
+\newcommand{\GGG}{\color{green}}
+\newcommand{\RRR}{\color{red}}
+\newenvironment{proof}{\noindent {\em Proof}.\,\,}
+   {\hspace*{\fill}$\halmos$\medskip}
+
+\def \qed {{\hspace*{\fill}$\halmos$\medskip}}
+
+%%%%%%%%%%%% DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%
+
+\def \ba {\begin{array}}
+\def \ea {\end{array}}
+
+\def \Z {{\mathbb Z}}
+\def \R {{\mathbb R}}
+\def \C {{\mathbb C}}
+\def \N {{\mathbb N}}
+\def \Q {{\mathbb Q}}
+\def \X {{\mathbb X}}
+\def \P {{\mathbb P}}
+\def \E {{\mathbb E}}
+\def \T {{\mathbb T}}
+
+\def \cP {{\mathcal P}}
+\def \cT {{\mathcal T}}
+\def \cB {{\mathcal B}}
+\def \cF {{\mathcal F}}
+\def \cE {{\mathcal E}}
+\def \cI {{\mathcal I}}
+\def \cB {{\mathcal B}}
+\def \cC {{\mathcal C}}
+\def \cI {{\mathcal I}}
+\def \cJ {{\mathcal J}}
+
+\def \ra {\rightarrow}
+\def \da {\downarrow}
+\def \ua {\uparrow}
+\def \cp {\mathrm{cap}\,}
+\def\O{\Omega}
+\def\eps{\varepsilon}
+\def \Var{\mathbb{V}\mathrm{ar}}
+\def \Leb {{\mathcal{L}}}
+\begin{document}
+
+\noindent {\bf Michiel van den Berg, University of Bristol}\\
+
+\noindent {\bf Title:  Sign changing solutions of Poisson's equation}\\
+
+\noindent {\bf Workshop Asymptotic Patterns and Symmetry, University of Swansea, 10-12 June 2019}\\
+
+\noindent {\bf Abstract}
+Let $\Omega$ be an open, possibly unbounded, set in Euclidean space $\mathbb{R}^m$ with boundary $\partial \Omega$, let $A$ be a measurable subset of $\Omega$ with measure $|A|$, and let $\gamma \in (0,1)$.
+We investigate whether the solution $v_{\Omega,A,\gamma}$ of $-\Delta v=\gamma{\bf 1}_{\Omega-A}-(1-\gamma){\bf 1}_{A}$ with $v=0\,\, \textup{on}\,\, \partial\Omega$ changes sign.
+Bounds are obtained for $|A|$ in terms of geometric characteristics of $\Omega$ (bottom of the spectrum of the Dirichlet Laplacian, torsion, measure, or $R$-smoothness
+of the boundary) such that $v_{\Omega,A,\gamma}$ is either non-negative or is sign changing. Joint work with Dorin Bucur, Universit\'e de Savoie.
+\end{document} 
