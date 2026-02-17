@@ -1,0 +1,97 @@
+LMS-WIMCS ANALYSIS DAY
+
+The third LMS-WIMCS Analysis Day took place at the Department of
+Mathematics, Swansea University, on Thursday 25 September 2014. The
+meeting was designed to give an an opportunity to early career
+researchers in analysis, numerical methods and applications to
+present their recent results. The talks were mostly focussed on
+theoretical and numerical aspects of materials science and spectral
+theory. The topics covered a broad range of questions on modern
+PDEs but were also sufficiently close to ensure lively discussions
+between the participants that may lead to a research collaboration
+in the future. The invited speakers of the workshop were:
+
+Aurelio Arranz Carreno (Swansea)
+On immersed techniques for fluid-structure interaction: the Immersed Structural Potential Method
+
+The practical solution of complex fluid-structure interaction problems requires
+advanced numerical techniques that can cope with the different physics, scales and large
+deformations present in the problem. Two main families of methods have been developed
+over the years, namely boundary fitted and immersed, and in this talk the speaker present the
+Immersed Structural Potential Method, a new numerical technique based upon the original
+Immersed Boundary Method (IBM) that is particularly suited for the case of incompressible
+solids and fluids, a case that is a main challenge for other techniques.
+
+Mikhail Cherdantsev (Cardiff)
+Homogenisation of elastic composite plates in the nonlinear bending regime
+
+The speaker discussed a problem of homogenisation (i.e. finding an effective limit
+description) of a thin elastic periodic composite plate in the bending regime
+when thickness of the plate and period of the composite microstructure both go to zero.
+In particular, in the regime when thickness is smaller then the square of the period,
+the speaker presented an interesting and somewhat surprising result implying that the homogenised
+stored elastic energy function is everywhere discontinuous function.
+
+
+Jonathan Eckhardt (Cardiff/Vienna)
+The inverse spectral problem for indefinite strings
+
+Solving the equation of motion for a vibrating string with inhomogeneous mass
+distribution on a semi-axis by means of Fouriers method leads to a particular Sturm-Liouville
+spectral problem. The solution of the corresponding inverse spectral problem, describing the
+totality of all associated Weyl-Titchmarsh functions, goes back to work of M. G. Krein from
+the 1950s and of L. de Branges from the 1960s. The speaker reviewed this result and showed
+how it can be generalized to strings with indefinite mass distribution.
+
+Michael Nieves (Liverpool)
+Wiener-Hopf analysis in the dynamic fracture of periodic flexural structures
+
+In this talk, the speaker considered the dynamic fracture problem for a discrete lattice
+strip composed of periodically placed point masses connected by beams. A discontinuity
+representing the fracture was assumed to propagate steadily along the strip. It was shown that
+the governing equations for the masses form a discrete system of second order ODEs involving
+the displacements and rotations of the masses. Numerical simulations were given which show
+that the model can be used to predict the speed of advancement of the fracture through a structure
+subjected to an oscillating point force.
+
+
+Juan Reyes (Cardiff)
+Conditional stability of Calderón problem for less regular conductivities
+
+The speaker presented a recent log-type conditional stability result with Holder norm for the Calderon problem,
+assuming continuously differentiable conductivities with Holder continuous first-order derivatives
+in a Lipschitz domain of the Euclidean space with dimension greater than or equal to three.
+
+Adam Vellender (Aberystwyth)
+Weight functions for fracture problems along soft imperfect interfaces
+
+The speaker considered interfacial crack problems in bi-material linearly elastic and isotropic
+solids with soft imperfect interfaces. The presence of imperfect interfaces (typically
+used to model a thin layer of adhesive) fundamentally alters the distribution of stresses
+near interfacial crack tips. Taking this behaviour into account, the speaker formulated suitable
+weight function problems and employed Wiener-Hopf type methods to find their solutions.
+These auxiliary solutions aid in the evaluation of all important constants in asymptotic
+expressions describing physical fields. Further, perturbation analysis then allows for the
+influence of small defects on the propagation of the main crack to be described.
+
+----------------------------------------------------------------------
+
+Attendance (Male/Female):
+
+Invited speakers                  6/0
+Research students (host inst)     2/2
+Research students (other inst’s)  3/0
+Other participants (host inst)    4/1
+Other participants (other inst’s) 3/1
+Total                            18/4
+
+----------------------------------------------------------------------
+
+Financial:
+
+In addition to £357.91 travel expenses listed on Stephen's
+spreadsheet we expect £300 for accommodation and £300 for catering
+(lunch and dinner), so the expected total for Swansea meeting
+should be in the region of £957.91. We will be able to confirm this
+once Stephen receives an internal recharge from our Finances.
+----------------------------------------------------------------------
